@@ -1,4 +1,4 @@
-package com.winsome.nuzul.ui.theme
+package com.winsome.nuzul.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

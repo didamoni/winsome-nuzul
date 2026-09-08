@@ -1,4 +1,4 @@
-package com.winsome.nuzul.ui.theme
+package com.winsome.nuzul.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
