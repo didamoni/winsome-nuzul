@@ -1,0 +1,63 @@
+# Gradle
+.gradle/
+**/build/
+**/generated/
+.cxx/
+.externalNativeBuild/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Local configuration
+local.properties
+
+# Keystore and signing files
+*.jks
+*.keystore
+debug.keystore
+keystore.properties
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Java / Kotlin compiled files
+*.class
+*.dex
+.kotlin/
+
+# Android NDK
+ndkBuild/
+
+# Generated / temporary files
+captures/
+outputs/
+.navigation/
+
+# Crashlytics / Fabric configuration
+fabric.properties
+crashlytics.properties
+
+# Logs
+*.log
+
+# Test / coverage reports
+**/coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Google Services (optional, uncomment if not needed in version control)
+google-services.json
+
+# Database (optional, uncomment if not needed in version control)
+#*.sql
+#*.sqlite
+
+# Proguard (optional, uncomment if not needed in version control)
+#proguard-rules.pro
