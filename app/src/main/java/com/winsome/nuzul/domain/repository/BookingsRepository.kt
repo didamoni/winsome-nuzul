@@ -9,4 +9,7 @@ interface BookingsRepository {
 
     /** Emits all bookings, ordered by check-in date (upcoming first). */
     fun getBookings(): Flow<List<Booking>>
+
+    /** Fetches a specific booking by reference. */
+    suspend fun getBookingByReference(reference: String): Result<Booking>
 }
