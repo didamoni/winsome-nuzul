@@ -1,0 +1,1406 @@
+{
+  "cities": [
+    "Cairo",
+    "Alexandria",
+    "Hurghada",
+    "Sharm El Sheikh",
+    "Giza",
+    "Luxor",
+    "Aswan",
+    "Dubai",
+    "Abu Dhabi",
+    "Riyadh",
+    "AlUla",
+    "Istanbul"
+  ],
+  "featured": [
+    "hotel_020",
+    "hotel_040",
+    "hotel_060",
+    "hotel_080",
+    "hotel_100"
+  ],
+  "hotels": [
+    {
+      "id": "hotel_001",
+      "name": "Marriott Mena House",
+      "city": "Giza",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 380.00, "currency": "USD" },
+      "images": [
+        "https://www.hotelscombined.com/himg/ed/d5/43/leonardo-6106-717578-491178.jpg",
+        "https://cache.marriott.com/content/dam/marriott-renditions/CAIMN/caimn-guestroom-0025-hor-clsc.jpg"
+      ],
+      "amenities": ["Free WiFi", "Swimming Pool", "Pyramid View", "Restaurant", "Spa", "Fitness Center"],
+      "description": "A historic luxury hotel set in 40 acres of green gardens with direct, breathtaking views of the Giza Pyramids.",
+      "location": { "latitude": 29.9858, "longitude": 31.1278, "address": "Pyramids Road, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_002",
+      "name": "Fairmont Nile City",
+      "city": "Cairo",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 220.00, "currency": "USD" },
+      "images": [
+        "https://cf.bstatic.com/xdata/images/hotel/max500/914966156.jpg",
+        "https://m.ahstatic.com/is/image/accorhotels/aja_p_5280-25"
+      ],
+      "amenities": ["Free WiFi", "Rooftop Pool", "Nile View", "Spa", "24/7 Room Service", "Gym"],
+      "description": "Modern luxury tower sitting right on the banks of the Nile River, offering panoramic views and award-winning dining.",
+      "location": { "latitude": 30.0713, "longitude": 31.2281, "address": "Corniche El Nile, Ramlet Beaulac, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_003",
+      "name": "Burj Al Arab Jumeirah",
+      "city": "Dubai",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 1450.00, "currency": "USD" },
+      "images": [
+        "https://www.adventurouskate.com/wp-content/uploads/2013/09/The-Burj-al-Arab-Hotel-in-Dubai.jpg",
+        "https://d20jhx4r9t6zw8.cloudfront.net/2902362_large_09e9d4b5.jpg"
+      ],
+      "amenities": ["Private Beach", "Helipad", "Personal Butler", "Spa", "Infinity Pool", "Airport Shuttle"],
+      "description": "An iconic sail-shaped masterpiece offering ultra-luxurious duplex suites with private butler service on a private island.",
+      "location": { "latitude": 25.1412, "longitude": 55.1852, "address": "Jumeirah Beach Road, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_004",
+      "name": "Atlantis The Royal",
+      "city": "Dubai",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 920.00, "currency": "USD" },
+      "images": [
+        "http://media.foratravel.com/image/upload/v1739650216/View_from_the_room_-_Brian_Baldwin_cveoks.jpg",
+        "https://dam.kerzner.com/i/kerzner/Atlantis-The-Royal-Sky-Pool-Villa-Terrace-Sunset"
+      ],
+      "amenities": ["Sky Pool", "Aquaventure Access", "Michelin Chefs", "Private Beach", "Spa", "Concierge"],
+      "description": "A landmark architectural resort on the Palm Jumeirah redefining experiential luxury with elevated private pools.",
+      "location": { "latitude": 25.1381, "longitude": 55.1272, "address": "Crescent Road, Palm Jumeirah, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_005",
+      "name": "Our Habitas AlUla",
+      "city": "AlUla",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 650.00, "currency": "USD" },
+      "images": [
+        "https://www.ourhabitas.com/wp-content/uploads/2021/12/Habitas_Al-Ula_2021_01_000008.jpg",
+        "https://www.authentic-luxury.com/files/glamping-middle-east/saudi-arabia/habitas-alula/accommodation/authentic-luxury-habitas-alula-canyon-alcone-villa-interior-03.jpg"
+      ],
+      "amenities": ["Canyon Pool", "Wellness Center", "Desert Excursions", "Free WiFi", "Organic Dining"],
+      "description": "An eco-friendly luxury haven tucked deep inside the dramatic sandstone canyons of the Ashar Valley.",
+      "location": { "latitude": 26.6833, "longitude": 37.9167, "address": "Ashar Valley, AlUla, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_006",
+      "name": "Museum Hotel Cappadocia",
+      "city": "Istanbul",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 510.00, "currency": "USD" },
+      "images": [
+        "https://www.museumhotel.com.tr/application/files/6416/9321/8200/deluxe-rooms-ana-foto.webp",
+        "https://www.museumhotel.com.tr/application/files/1016/9324/6831/01-mystic-main-photo.webp"
+      ],
+      "amenities": ["Heated Cave Pool", "Museum Artifacts", "Wine Tap", "Organic Breakfast", "Free WiFi"],
+      "description": "A Relais & Châteaux property built into restored ancient stone caves featuring museum-quality historical antiques.",
+      "location": { "latitude": 38.6298, "longitude": 34.8053, "address": "Tekelli Mahallesi, Uchisar, Cappadocia, Turkey" }
+    },
+    {
+      "id": "hotel_007",
+      "name": "Steigenberger Cecil Hotel",
+      "city": "Alexandria",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 115.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg",
+        "https://images.pexels.com/photos/2105326/pexels-photo-2105326.jpeg"
+      ],
+      "amenities": ["Free WiFi", "Sea View", "Restaurant", "Bar", "24/7 Reception", "Historic Architecture"],
+      "description": "A legendary vintage hotel at Raml Station with rich history, overlooking Alexandria's Mediterranean coast.",
+      "location": { "latitude": 31.1998, "longitude": 29.9013, "address": "1 Saad Zaghloul Square, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_008",
+      "name": "Four Seasons Hotel San Stefano",
+      "city": "Alexandria",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 340.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Private Beach", "Infinity Pool", "Spa", "Fine Dining", "Gym", "Valet Parking"],
+      "description": "Beachfront luxury resort along Alexandria's famous Corniche with private marina access and sea-view balconies.",
+      "location": { "latitude": 31.2454, "longitude": 29.9664, "address": "399 El Geish Road, San Stefano, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_009",
+      "name": "Rixos Premium Magawish",
+      "city": "Hurghada",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 290.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["Ultra All-Inclusive", "Private Beach", "Diving Center", "Water Sports", "Kids Club", "Spa"],
+      "description": "An all-suite and villa Red Sea destination with pristine sandy shores and crystal-clear turquoise waters.",
+      "location": { "latitude": 27.1582, "longitude": 33.8211, "address": "Safaga Road, Hurghada, Red Sea, Egypt" }
+    },
+    {
+      "id": "hotel_010",
+      "name": "Steigenberger ALDAU Beach Hotel",
+      "city": "Hurghada",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 210.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg",
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7"
+      ],
+      "amenities": ["Golf Course", "Lazy River Pool", "Private Beach", "Free WiFi", "Spa", "Kids Club"],
+      "description": "A 5-star deluxe beach resort featuring a 9-hole golf course and a massive meandering pool complex.",
+      "location": { "latitude": 27.1721, "longitude": 33.8299, "address": "Youssef Afifi Road, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_011",
+      "name": "Four Seasons Resort Sharm El Sheikh",
+      "city": "Sharm El Sheikh",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 480.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
+        "https://images.pexels.com/photos/7166944/pexels-photo-7166944.jpeg"
+      ],
+      "amenities": ["Coral Reef Diving", "Private Beach", "Funicular", "Tennis Courts", "Spa", "Kids Club"],
+      "description": "An Arabian-piazza style hillside haven falling gently toward a protected marine sanctuary and coral reefs.",
+      "location": { "latitude": 27.9582, "longitude": 34.3912, "address": "1 Four Seasons Boulevard, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_012",
+      "name": "Rixos Sultanahmet Heritage",
+      "city": "Istanbul",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 260.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Free WiFi", "Turkish Bath", "Bosphorus View", "Breakfast Included", "Tour Desk"],
+      "description": "Located steps away from Hagia Sophia, combining Ottoman elegance with top-tier modern Turkish hospitality.",
+      "location": { "latitude": 41.0082, "longitude": 28.9784, "address": "Sultanahmet Square, Fatih, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_013",
+      "name": "Sofitel Winter Palace",
+      "city": "Luxor",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 195.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg",
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg"
+      ],
+      "amenities": ["Botanical Gardens", "Nile View", "Outdoor Pool", "French Fine Dining", "Free WiFi"],
+      "description": "A 19th-century Victorian palace hotel where Howard Carter announced the discovery of King Tutankhamun's tomb.",
+      "location": { "latitude": 25.6967, "longitude": 32.6391, "address": "1 El-Kornis St, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_014",
+      "name": "Hilton Luxor Resort & Spa",
+      "city": "Luxor",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 160.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+        "https://images.pexels.com/photos/33376434/pexels-photo-33376434.jpeg"
+      ],
+      "amenities": ["Infinity Pools", "Full Spa", "Nile Riverside Dining", "Free WiFi", "Shuttle Service"],
+      "description": "Tranquil resort set along the Nile's East Bank with infinity pools looking over ancient felucca boats.",
+      "location": { "latitude": 25.7208, "longitude": 32.6583, "address": "Karnak, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_015",
+      "name": "Sofitel Legend Old Cataract",
+      "city": "Aswan",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 420.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+        "https://images.pexels.com/photos/2105326/pexels-photo-2105326.jpeg"
+      ],
+      "amenities": ["Nile View", "Historic Suite", "Infinity Pool", "Spa", "Fine Dining", "Free WiFi"],
+      "description": "A majestic 19th-century palace perched on a pink granite cliff overlooking Elephantine Island in the Nile.",
+      "location": { "latitude": 24.0821, "longitude": 32.8872, "address": "Abtal El Tahrir Street, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_016",
+      "name": "Mövenpick Resort Aswan",
+      "city": "Aswan",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 140.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/8089070/pexels-photo-8089070.jpeg",
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg"
+      ],
+      "amenities": ["Island Resort", "Panoramic Tower", "Swimming Pool", "Ferry Transfer", "Free WiFi"],
+      "description": "Located on Elephantine Island, providing 360-degree views of Aswan's historic Nile landscapes.",
+      "location": { "latitude": 24.0903, "longitude": 32.8889, "address": "Elephantine Island, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_017",
+      "name": "Ritz-Carlton Riyadh",
+      "city": "Riyadh",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 540.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg",
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg"
+      ],
+      "amenities": ["Indoor Pool", "Palatial Gardens", "Bowling Alley", "Luxury Spa", "Fine Dining"],
+      "description": "A magnificent palace estate featuring 600-year-old olive trees, grand archways, and royal suites.",
+      "location": { "latitude": 24.6653, "longitude": 46.6261, "address": "Area B, King Abdul Aziz Road, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_018",
+      "name": "Four Seasons Kingdom Centre",
+      "city": "Riyadh",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 490.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Sky Bridge Access", "Outdoor Pool", "Tennis Court", "Luxury Spa", "Free WiFi"],
+      "description": "Housed within the famous Kingdom Centre tower, placing guests high above Riyadh's skyline.",
+      "location": { "latitude": 24.7116, "longitude": 46.6744, "address": "King Fahd Road, Olaya, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_019",
+      "name": "Emirates Palace Mandarin Oriental",
+      "city": "Abu Dhabi",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 680.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg",
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg"
+      ],
+      "amenities": ["Private Beach", "Marina", "Gold-Leaf Cafe", "Water Park", "Butler Service"],
+      "description": "A world-famous landmark palace combining Arabian craftsmanship with modern coastal opulence.",
+      "location": { "latitude": 24.4616, "longitude": 54.3174, "address": "West Corniche Road, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_020",
+      "name": "The St. Regis Saadiyat Island",
+      "city": "Abu Dhabi",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 420.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["Natural Beach", "Golf Club", "5 Pools", "St. Regis Butler", "Iridium Spa"],
+      "description": "Mediterranean-style resort nestled on Saadiyat Island's white beaches, home to natural dolphins and turtles.",
+      "location": { "latitude": 24.5431, "longitude": 54.4342, "address": "Saadiyat Island, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_021",
+      "name": "Baron Palace Sahl Hasheesh",
+      "city": "Hurghada",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 240.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6"
+      ],
+      "amenities": ["Private Beach", "Infiniti Pool", "Adults-Only Zone", "Asian Dining", "Free WiFi"],
+      "description": "A palatial resort built in oriental architecture at the heart of Sahl Hasheesh bay.",
+      "location": { "latitude": 27.0498, "longitude": 33.8882, "address": "Sahl Hasheesh, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_022",
+      "name": "Sunrise Crystal Bay Resort",
+      "city": "Hurghada",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 175.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/8089070/pexels-photo-8089070.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Private Lagoon", "All-Inclusive", "Spa", "Kids Club", "Free WiFi"],
+      "description": "A serene resort featuring a private natural lagoon beach and secluded luxury suites.",
+      "location": { "latitude": 27.1021, "longitude": 33.8267, "address": "KM 17 Hurghada Safaga Road, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_023",
+      "name": "The St. Regis Cairo",
+      "city": "Cairo",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 310.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg",
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg"
+      ],
+      "amenities": ["Butler Service", "Indoor Pool", "Nile View", "Astor Ballroom", "Free WiFi"],
+      "description": "An address of prestige on the Nile Corniche offering timeless elegance and custom butler assistance.",
+      "location": { "latitude": 30.0619, "longitude": 31.2301, "address": "1189 Nile Corniche, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_024",
+      "name": "Kempinski Nile Hotel",
+      "city": "Cairo",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 200.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Rooftop Pool", "Boutique Spa", "Floor Butler", "Nile View", "Free WiFi"],
+      "description": "An intimate boutique property nestled in the green embassy district of Garden City.",
+      "location": { "latitude": 30.0384, "longitude": 31.2285, "address": "12 Ahmed Raghab Street, Garden City, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_025",
+      "name": "Triumph Luxury Hotel",
+      "city": "Cairo",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 150.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg",
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg"
+      ],
+      "amenities": ["Outdoor Pool", "Business Center", "Free Parking", "Gym", "Free WiFi"],
+      "description": "Modern urban oasis in Fifth Settlement, New Cairo, ideal for both business and family travel.",
+      "location": { "latitude": 30.0074, "longitude": 31.4547, "address": "Block 19, Fifth Settlement, New Cairo, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_026",
+      "name": "Pyramids Valley Boutique Hotel",
+      "city": "Giza",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 85.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368",
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg"
+      ],
+      "amenities": ["Rooftop Terrace", "Pyramid View", "Breakfast Included", "Free WiFi", "Airport Shuttle"],
+      "description": "Charming boutique hotel located directly opposite the Sphinx and Great Pyramids light show.",
+      "location": { "latitude": 29.9765, "longitude": 31.1381, "address": "Sphinx Street, Nazlet El-Semman, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_027",
+      "name": "Steigenberger Hotel El Tahrir",
+      "city": "Cairo",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 130.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg",
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg"
+      ],
+      "amenities": ["Outdoor Pool", "Fitness Center", "Downtown Access", "Free WiFi", "Meeting Rooms"],
+      "description": "Prime downtown location right next to the Egyptian Museum and Tahrir Square.",
+      "location": { "latitude": 30.0444, "longitude": 31.2357, "address": "2 Kasr El Nil Street, Tahrir Square, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_028",
+      "name": "Eastern Al Zaytouna Resort",
+      "city": "Hurghada",
+      "rating": 4.1,
+      "pricePerNight": { "amount": 70.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Outdoor Pool", "Buffet Restaurant", "Free WiFi", "Family Rooms"],
+      "description": "Budget-friendly Red Sea resort offering cozy accommodations near El Dahar downtown.",
+      "location": { "latitude": 27.2571, "longitude": 33.8124, "address": "Corniche Road, Dahar, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_029",
+      "name": "Jumeirah Beach Hotel",
+      "city": "Dubai",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 520.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg"
+      ],
+      "amenities": ["Wild Wadi Waterpark", "Private Beach", "5 Swimming Pools", "Kids Club", "Gym"],
+      "description": "A wave-shaped family resort offering unlimited free access to Wild Wadi Waterpark.",
+      "location": { "latitude": 25.1415, "longitude": 55.1901, "address": "Jumeirah Beach Road, Um Suqeim, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_030",
+      "name": "Armani Hotel Dubai",
+      "city": "Dubai",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 610.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Inside Burj Khalifa", "Armani Spa", "Fountain View", "Japanese Restaurant", "Lifestyle Manager"],
+      "description": "Designed by Giorgio Armani, occupying 11 floors of the world's tallest building, Burj Khalifa.",
+      "location": { "latitude": 25.1972, "longitude": 55.2744, "address": "Burj Khalifa, Downtown Dubai, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_031",
+      "name": "Banyan Tree AlUla",
+      "city": "AlUla",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 1100.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
+        "https://images.pexels.com/photos/7974836/pexels-photo-7974836.jpeg"
+      ],
+      "amenities": ["Villa Fire Pit", "Rock Pool", "Banyan Spa", "Desert Stargazing", "Free WiFi"],
+      "description": "Tented villas sitting among towering rock formations in one of the world's most mysterious landscapes.",
+      "location": { "latitude": 26.6912, "longitude": 37.9251, "address": "Ashar Valley, AlUla, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_032",
+      "name": "Çırağan Palace Kempinski",
+      "city": "Istanbul",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 780.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg",
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg"
+      ],
+      "amenities": ["Bosphorus Infinity Pool", "Ottoman Palace Suites", "Helipad", "Spa", "Liman Restaurant"],
+      "description": "A restored 19th-century Ottoman Imperial Palace situated directly on the shore of the Bosphorus Strait.",
+      "location": { "latitude": 41.0436, "longitude": 29.0158, "address": "Çırağan Cd. No:32, Beşiktaş, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_033",
+      "name": "Pera Palace Hotel",
+      "city": "Istanbul",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 320.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/2105326/pexels-photo-2105326.jpeg",
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg"
+      ],
+      "amenities": ["Historic Elevator", "Agatha Christie Room", "Indoor Pool", "Orient Express Bar", "Spa"],
+      "description": "Museum-hotel built in 1892 to host Orient Express passengers, blending Art Nouveau and Oriental styles.",
+      "location": { "latitude": 41.0314, "longitude": 28.9742, "address": "Meşrutiyet Cd. No:52, Beyoğlu, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_034",
+      "name": "Swissôtel The Bosphorus",
+      "city": "Istanbul",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 390.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Private Gardens", "Rooftop Pool", "Pürovel Spa", "Tennis Courts", "Bosphorus View"],
+      "description": "Set within 65 acres of historical gardens in central Istanbul with panoramic water views.",
+      "location": { "latitude": 41.0411, "longitude": 28.9961, "address": "Visenezade, Acısu Sk. No:19, Beşiktaş, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_035",
+      "name": "Hilton Alexandria Corniche",
+      "city": "Alexandria",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 125.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1505881402582-c5bc11054f91",
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg"
+      ],
+      "amenities": ["Rooftop Pool", "Private Beach Shuttle", "Sea View", "Free WiFi", "Fitness Center"],
+      "description": "Located along Alexandria's coast with an ocean-view rooftop pool bar and seafood restaurants.",
+      "location": { "latitude": 31.2589, "longitude": 29.9812, "address": "544 El Geish Road, Sidi Bishr, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_036",
+      "name": "Sunrise Arabella Azur Resort",
+      "city": "Hurghada",
+      "rating": 4.2,
+      "pricePerNight": { "amount": 95.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
+        "https://images.pexels.com/photos/7166944/pexels-photo-7166944.jpeg"
+      ],
+      "amenities": ["Nubian Architecture", "Snorkeling Reef", "All-Inclusive", "Free WiFi", "3 Pools"],
+      "description": "Built in traditional white Nubian village style with direct access to house coral reefs.",
+      "location": { "latitude": 27.2301, "longitude": 33.8412, "address": "Corniche Road, Arabia Area, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_037",
+      "name": "Savoy Sharm El Sheikh",
+      "city": "Sharm El Sheikh",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 190.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["Soho Square Access", "Private Beach", "Diving", "Spa", "Free WiFi"],
+      "description": "Situated in White Knight Bay, directly connected to the bustling Soho Square entertainment complex.",
+      "location": { "latitude": 27.9621, "longitude": 34.3988, "address": "SOHO Square, Sharks Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_038",
+      "name": "Steigenberger Alcazar",
+      "city": "Sharm El Sheikh",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 260.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Private Beach", "30,000 sqm Pool", "Aqua Park", "Ultra All-Inclusive", "Kids Club"],
+      "description": "Nabq Bay's ultimate luxury resort featuring its own private beach and underwater scuba world.",
+      "location": { "latitude": 28.0211, "longitude": 34.4351, "address": "Nabq Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_039",
+      "name": "Jaz Mirabel Resort",
+      "city": "Sharm El Sheikh",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 135.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg",
+        "https://images.pexels.com/photos/8089070/pexels-photo-8089070.jpeg"
+      ],
+      "amenities": ["Tuscan Style", "Water Slides", "Private Beach", "Tennis Courts", "Free WiFi"],
+      "description": "Tuscan-inspired architecture overlooking Gulf of Aqaba, suitable for families and water park fans.",
+      "location": { "latitude": 28.0312, "longitude": 34.4398, "address": "Nabq Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_040",
+      "name": "Sonesta St. George Hotel",
+      "city": "Luxor",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 105.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Nile View", "Health Club", "Outdoor Pool", "Free WiFi", "Belly Dance Shows"],
+      "description": "Elegantly appointed property on the Nile River with marble grand stairs and classical styling.",
+      "location": { "latitude": 25.6841, "longitude": 32.6342, "address": "Corniche El Nile Street, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_041",
+      "name": "Pyramisa Island Hotel",
+      "city": "Aswan",
+      "rating": 4.1,
+      "pricePerNight": { "amount": 80.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg",
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg"
+      ],
+      "amenities": ["Isis Island Resort", "Exotic Gardens", "Huge Pool", "Ferry Boat", "Free WiFi"],
+      "description": "Set on 28 acres of tropical gardens on Isis Island in the middle of the Nile River in Aswan.",
+      "location": { "latitude": 24.0751, "longitude": 32.8852, "address": "Isis Island, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_042",
+      "name": "Al Faisaliah Hotel",
+      "city": "Riyadh",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 470.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg",
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg"
+      ],
+      "amenities": ["24h Butler", "Globe Restaurant", "Espa Spa", "City View", "Free WiFi"],
+      "description": "A iconic luxury complex featuring the famous golden globe glass restaurant overlooking Riyadh.",
+      "location": { "latitude": 24.6901, "longitude": 46.6852, "address": "King Fahd Road, Olaya, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_043",
+      "name": "JW Marriott Hotel Riyadh",
+      "city": "Riyadh",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 340.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg",
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg"
+      ],
+      "amenities": ["Outdoor Pool", "Executive Lounge", "Gym", "Free WiFi", "Tennis Court"],
+      "description": "A high-rise sanctuary blending modern architectural lines with traditional Najdi hospitality.",
+      "location": { "latitude": 24.7912, "longitude": 46.6312, "address": "King Fahd Road, Sahafa, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_044",
+      "name": "Qasr Al Sarab Desert Resort",
+      "city": "Abu Dhabi",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 580.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
+        "https://images.pexels.com/photos/7974836/pexels-photo-7974836.jpeg"
+      ],
+      "amenities": ["Desert Oasis Pool", "Camel Trekking", "Anantara Spa", "Dune Boarding", "Free WiFi"],
+      "description": "Perched on the edge of the Empty Quarter (Rub' al Khali), resembling a fortified desert fortress.",
+      "location": { "latitude": 22.9012, "longitude": 54.3411, "address": "1 Qasr Al Sarab Road, Liwa Desert, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_045",
+      "name": "Fairmont Bab Al Bahr",
+      "city": "Abu Dhabi",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 280.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg",
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg"
+      ],
+      "amenities": ["Grand Mosque View", "Olympic Pool", "Private Beach", "Marco Pierre White Steakhouse"],
+      "description": "Offers unparalleled direct views of the Sheikh Zayed Grand Mosque across the Khor Al Maqta water.",
+      "location": { "latitude": 24.4182, "longitude": 54.4891, "address": "Khor Al Maqta, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_046",
+      "name": "Giza Inn Pyramids View",
+      "city": "Giza",
+      "rating": 3.8,
+      "pricePerNight": { "amount": 45.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368"
+      ],
+      "amenities": ["Free Breakfast", "Free WiFi", "Rooftop Terrace", "Airport Transfer"],
+      "description": "Budget hotel with clean rooms and a plain rooftop that offers full clear views of the Pyramids.",
+      "location": { "latitude": 29.9812, "longitude": 31.1345, "address": "Abou Al Houl St, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_047",
+      "name": "Address Downtown Dubai",
+      "city": "Dubai",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 530.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg"
+      ],
+      "amenities": ["Burj Khalifa View", "Direct Mall Bridge", "Infinity Pool", "Club Lounge"],
+      "description": "Standing tall right in Downtown Dubai with stunning fountain views and direct access to Dubai Mall.",
+      "location": { "latitude": 25.1951, "longitude": 55.2789, "address": "Sheikh Mohammed bin Rashid Blvd, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_048",
+      "name": "Raffles Istanbul",
+      "city": "Istanbul",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 620.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg",
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg"
+      ],
+      "amenities": ["Helipad", "Personal Butler", "Zorlu Center Access", "Raffles Spa", "Art Collection"],
+      "description": "An oasis of high fashion and contemporary Turkish art situated in the prestigious Zorlu Center.",
+      "location": { "latitude": 41.0662, "longitude": 29.0171, "address": "Zorlu Center, Kuruçeşme, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_049",
+      "name": "Shaza Riyadh Hotel",
+      "city": "Riyadh",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 180.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg",
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Silk Route Restaurant", "Wellness Spa", "Kids Club", "Free WiFi", "Prayer Rooms"],
+      "description": "Inspired by the legendary Silk Route, featuring contemporary Andalusian interior design.",
+      "location": { "latitude": 24.6811, "longitude": 46.7412, "address": "Eastern Ring Branch Rd, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_050",
+      "name": "Paradise Abu Soma Resort",
+      "city": "Hurghada",
+      "rating": 3.9,
+      "pricePerNight": { "amount": 65.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1573843981267-be1999ff37cd"
+      ],
+      "amenities": ["Beach Access", "Pool", "Restaurant", "Animation Team", "Free Parking"],
+      "description": "Affordable coastal resort in Soma Bay with long sandy shorelines and active watersports.",
+      "location": { "latitude": 26.8512, "longitude": 33.9312, "address": "Soma Bay, Safaga, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_051",
+      "name": "Four Seasons Hotel Cairo at First Residence",
+      "city": "Giza",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 290.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Casino", "Nile View", "First Mall Access", "Outdoor Pool", "Spa"],
+      "description": "Located on the West Bank of the Nile in Giza, offering views of the Great Pyramids and botanical gardens.",
+      "location": { "latitude": 30.0278, "longitude": 31.2198, "address": "35 Giza Street, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_052",
+      "name": "Le Méridien Dahab Resort",
+      "city": "Sharm El Sheikh",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 110.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "https://images.pexels.com/photos/8089070/pexels-photo-8089070.jpeg"
+      ],
+      "amenities": ["Windsurfing Center", "Sea View", "Infinity Pool", "Free WiFi"],
+      "description": "Overlooking the Gulf of Aqaba with warm wind conditions, making it a hotspot for watersports.",
+      "location": { "latitude": 28.4812, "longitude": 34.5112, "address": "El Tahrir St, Dahab, South Sinai, Egypt" }
+    },
+    {
+      "id": "hotel_053",
+      "name": "InterContinental Cairo Semiramis",
+      "city": "Cairo",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 185.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/33376434/pexels-photo-33376434.jpeg"
+      ],
+      "amenities": ["Rooftop Pool", "Thai Restaurant", "Casino", "Nile View", "Free WiFi"],
+      "description": "A downtown Cairo landmark located next to Qasr El Nil Bridge with expansive riverfront balconies.",
+      "location": { "latitude": 30.0428, "longitude": 31.2319, "address": "Corniche El Nil, Garden City, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_054",
+      "name": "Mena House Boutique Hostel",
+      "city": "Giza",
+      "rating": 3.7,
+      "pricePerNight": { "amount": 35.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg"
+      ],
+      "amenities": ["Free Breakfast", "Free WiFi", "Shared Kitchen", "Rooftop Hammocks"],
+      "description": "Budget hostel offering dorm beds and private rooms for backpackers exploring the Giza Plateau.",
+      "location": { "latitude": 29.9821, "longitude": 31.1311, "address": "Pyramid St, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_055",
+      "name": "One&Only Royal Mirage",
+      "city": "Dubai",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 750.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["Kilometer Private Beach", "Oriental Hammam", "65 Acres Gardens", "Fine Dining"],
+      "description": "Intricate Arabian palace architecture with lush beachfront gardens facing the Palm Jumeirah.",
+      "location": { "latitude": 25.0982, "longitude": 55.1512, "address": "King Salman Bin Abdulaziz Al Saud St, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_056",
+      "name": "Shangri-La Qaryat Al Beri",
+      "city": "Abu Dhabi",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 310.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg",
+        "https://images.pexels.com/photos/33376434/pexels-photo-33376434.jpeg"
+      ],
+      "amenities": ["Abra Boat Rides", "Souk Access", "CHI Spa", "Infinity Pool", "Private Beach"],
+      "description": "Features traditional Arabic abra boats navigating internal waterways connecting the hotel to a souk.",
+      "location": { "latitude": 24.4121, "longitude": 54.4921, "address": "Khor Al Maqta, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_057",
+      "name": "Helnan Palace Hotel Montaza",
+      "city": "Alexandria",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 140.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg",
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg"
+      ],
+      "amenities": ["Royal Gardens View", "Sea View", "Pool", "Free WiFi", "Historic Park"],
+      "description": "Located directly inside the lush grounds of Montaza Royal Palace Gardens facing the sea.",
+      "location": { "latitude": 31.2868, "longitude": 30.0165, "address": "Montaza Palace Grounds, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_058",
+      "name": "Jaz Aquamarine Resort",
+      "city": "Hurghada",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 160.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg",
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6"
+      ],
+      "amenities": ["20 Swimming Pools", "Water Slides", "Private Beach", "All Inclusive", "Spa"],
+      "description": "A sprawling mega-resort with 20 outdoor pools and multiple aqua parks for family holidays.",
+      "location": { "latitude": 27.0981, "longitude": 33.8291, "address": "Magawish Road, South Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_059",
+      "name": "Mövenpick Resort El Gouna",
+      "city": "Hurghada",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 180.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1505881402582-c5bc11054f91",
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg"
+      ],
+      "amenities": ["Kitesurfing Center", "Lagoon Access", "Angsana Spa", "Free WiFi"],
+      "description": "Front-row seat on the Red Sea in El Gouna with dedicated kite-surfing facilities and calm lagoons.",
+      "location": { "latitude": 27.3991, "longitude": 33.6812, "address": "El Gouna Lagoon, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_060",
+      "name": "Sultan Gardens Resort",
+      "city": "Sharm El Sheikh",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 170.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Botanical Gardens", "House Reef Snorkeling", "5 Pools", "Indian Restaurant", "Spa"],
+      "description": "Award-winning eco-friendly resort in Shark's Bay boasting lush botanical foliage and marine life.",
+      "location": { "latitude": 27.9412, "longitude": 34.3812, "address": "Sharks Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_061",
+      "name": "Swiss Inn Resort Dahab",
+      "city": "Sharm El Sheikh",
+      "rating": 4.2,
+      "pricePerNight": { "amount": 80.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+      ],
+      "amenities": ["Sandy Beach", "Windsurfing School", "Kids Pool", "Free WiFi"],
+      "description": "Golden sand beach along Dahab lagoon with ideal conditions for windsurfing enthusiasts.",
+      "location": { "latitude": 28.4712, "longitude": 34.5081, "address": "Dahab Lagoon, South Sinai, Egypt" }
+    },
+    {
+      "id": "hotel_062",
+      "name": "Steigenberger Resort Achti",
+      "city": "Luxor",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 110.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg",
+        "https://images.pexels.com/photos/33376434/pexels-photo-33376434.jpeg"
+      ],
+      "amenities": ["Tropical Gardens", "Nile Promenade", "2 Swimming Pools", "Free WiFi"],
+      "description": "An 8-acre tropical garden retreat located directly on the East Bank of the Nile River.",
+      "location": { "latitude": 25.6791, "longitude": 32.6281, "address": "Al Awameya, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_063",
+      "name": "Jaz Jubilee Nile Cruise",
+      "city": "Luxor",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 230.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Sailing Hotel", "Sundeck Pool", "Guided Excursions", "Full Board Dining"],
+      "description": "Floating luxury cruise hotel sailing between Luxor and Aswan with full-board temple excursions.",
+      "location": { "latitude": 25.6981, "longitude": 32.6381, "address": "Luxor Docking Pier, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_064",
+      "name": "Basma Hotel Aswan",
+      "city": "Aswan",
+      "rating": 4.0,
+      "pricePerNight": { "amount": 75.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg"
+      ],
+      "amenities": ["Hilltop View", "Nubian Museum View", "Pool", "Free WiFi", "Terrace Bar"],
+      "description": "Perched on Aswan's highest hill opposite the Nubian Museum, offering great sunset panoramic views.",
+      "location": { "latitude": 24.0791, "longitude": 32.8899, "address": "Opposite Nubian Museum, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_065",
+      "name": "Hilton Riyadh Hotel & Residences",
+      "city": "Riyadh",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 290.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg"
+      ],
+      "amenities": ["Indoor Pool", "Granada Mall Bridge", "Executive Lounge", "Free WiFi", "Spa"],
+      "description": "Modern landmark connected directly to Granada Mall with spacious residential suites.",
+      "location": { "latitude": 24.7812, "longitude": 46.7212, "address": "Eastern Ring Rd, Shohada, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_066",
+      "name": "Narcissus Hotel & Spa",
+      "city": "Riyadh",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 260.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg",
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg"
+      ],
+      "amenities": ["Classic Elegance", "Indoor Pool", "Pampering Spa", "Free WiFi", "Fine Dining"],
+      "description": "Victorian classical interior luxury situated in the heart of Riyadh's financial district.",
+      "location": { "latitude": 24.6981, "longitude": 46.6891, "address": "Olaya St, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_067",
+      "name": "Rixos Premium Saadiyat Island",
+      "city": "Abu Dhabi",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 510.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["All Inclusive", "Water Park", "Wave Pool", "Turkish Hammam", "Private Beach"],
+      "description": "Palatial Ottoman-style resort offering an all-inclusive luxury beach experience on Saadiyat sand dunes.",
+      "location": { "latitude": 24.5491, "longitude": 54.4412, "address": "Saadiyat Island, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_068",
+      "name": "W Abu Dhabi - Yas Island",
+      "city": "Abu Dhabi",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 330.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["F1 Racetrack View", "Rooftop Pools", "Nightclub", "Yas Marina", "Free WiFi"],
+      "description": "The only hotel in the world straddling a Formula 1 racetrack, suspended partly over land and water.",
+      "location": { "latitude": 24.4672, "longitude": 54.6031, "address": "Yas Marina Circuit, Yas Island, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_069",
+      "name": "Shaza AlUla Resort",
+      "city": "AlUla",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 780.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
+        "https://images.pexels.com/photos/7974836/pexels-photo-7974836.jpeg"
+      ],
+      "amenities": ["Fireplace Villa", "Stargazing Deck", "Organic Dining", "Free WiFi"],
+      "description": "Luxury lodge inspired by historic Oasis trade caravans, built with ancient earth construction.",
+      "location": { "latitude": 26.6512, "longitude": 37.9012, "address": "AlUla Oasis, AlUla, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_070",
+      "name": "Four Seasons at the Bosphorus",
+      "city": "Istanbul",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 820.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/28011238/pexels-photo-28011238.jpeg",
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg"
+      ],
+      "amenities": ["Waterfront Terrace Pool", "Hammam Spa", "Private Boat", "Bosphorus Dining"],
+      "description": "A 19th-century Ottoman palace on the Bosphorus waterfront, featuring a heated outdoor pool right on the strait.",
+      "location": { "latitude": 41.0461, "longitude": 29.0221, "address": "Çırağan Cd. No:28, Beşiktaş, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_071",
+      "name": "Ajwa Sultanahmet",
+      "city": "Istanbul",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 310.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg",
+        "https://images.pexels.com/photos/2105326/pexels-photo-2105326.jpeg"
+      ],
+      "amenities": ["Handmade Carpets", "Azerbaijani Dining", "Traditional Spa", "Alcohol-Free", "Free WiFi"],
+      "description": "A 5-star hotel showcasing Ottoman craftsmanship with mother-of-pearl furniture and Silk Road rugs.",
+      "location": { "latitude": 41.0061, "longitude": 28.9691, "address": "Piyyer Loti Cd. No:30, Fatih, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_072",
+      "name": "Eastern Harbor Hotel",
+      "city": "Alexandria",
+      "rating": 3.9,
+      "pricePerNight": { "amount": 55.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg"
+      ],
+      "amenities": ["Harbor View", "Free WiFi", "Breakfast", "24/7 Desk"],
+      "description": "Cozy basic hotel facing Citadel of Qaitbay across Alexandria's ancient Eastern Harbor.",
+      "location": { "latitude": 31.2051, "longitude": 29.8981, "address": "Corniche Rd, Al Attarin, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_073",
+      "name": "Paradise Inn Maamoura",
+      "city": "Alexandria",
+      "rating": 4.1,
+      "pricePerNight": { "amount": 85.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1505881402582-c5bc11054f91"
+      ],
+      "amenities": ["Private Beach", "Lush Gardens", "Swimming Pool", "Restaurant"],
+      "description": "Resort style retreat situated in the quiet, secure residential beach enclave of Maamoura.",
+      "location": { "latitude": 31.2981, "longitude": 30.0312, "address": "Maamoura Beach, Alexandria, Egypt" }
+    },
+    {
+      "id": "hotel_074",
+      "name": "Desert Rose Resort",
+      "city": "Hurghada",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 120.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6",
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg"
+      ],
+      "amenities": ["Natural Lagoon", "Aqua Park", "Olympic Pool", "4 Restaurants", "Free WiFi"],
+      "description": "Features a 1 km private natural beach lagoon with clear blue water inside the resort grounds.",
+      "location": { "latitude": 27.1021, "longitude": 33.8212, "address": "Safaga Road, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_075",
+      "name": "Albatros Citadel Sahl Hasheesh",
+      "city": "Hurghada",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 210.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+        "https://images.pexels.com/photos/29824396/pexels-photo-29824396.jpeg"
+      ],
+      "amenities": ["Stone Architecture", "3 Sea Lagoons", "Marina", "Coral Reef", "Free WiFi"],
+      "description": "Built entirely with natural coral stones carved from neighboring mountains, giving a fortress feel.",
+      "location": { "latitude": 27.0812, "longitude": 33.8912, "address": "Sahl Hasheesh, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_076",
+      "name": "Barceló Tiran Sharm",
+      "city": "Sharm El Sheikh",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 115.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "https://images.pexels.com/photos/7166944/pexels-photo-7166944.jpeg"
+      ],
+      "amenities": ["Tiran Island View", "5 Pools", "Spa", "Tennis Courts", "Free WiFi"],
+      "description": "Located in Nabq Bay with direct coastal views toward the famous Tiran Island.",
+      "location": { "latitude": 28.0512, "longitude": 34.4481, "address": "Nabq Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_077",
+      "name": "Coral Sea Aqua Club",
+      "city": "Sharm El Sheikh",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 130.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg"
+      ],
+      "amenities": ["FlowRider Surfing", "Water Park", "Fitness Center", "All Inclusive"],
+      "description": "Home to Nabq's popular FlowRider wave simulator and extensive waterpark attractions.",
+      "location": { "latitude": 28.0381, "longitude": 34.4321, "address": "Nabq Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_078",
+      "name": "Nefertiti Hotel Luxor",
+      "city": "Luxor",
+      "rating": 4.2,
+      "pricePerNight": { "amount": 40.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/2227787/pexels-photo-2227787.jpeg"
+      ],
+      "amenities": ["Temple View Rooftop", "Free Breakfast", "Bazaar Location", "Free WiFi"],
+      "description": "Popular budget spot right in the old bazaar facing the illuminated Avenue of Sphinxes and Luxor Temple.",
+      "location": { "latitude": 25.7011, "longitude": 32.6398, "address": "El-Sahabi Street, Luxor Bazaar, Luxor, Egypt" }
+    },
+    {
+      "id": "hotel_079",
+      "name": "Keylany Hotel Aswan",
+      "city": "Aswan",
+      "rating": 3.8,
+      "pricePerNight": { "amount": 35.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/2105326/pexels-photo-2105326.jpeg"
+      ],
+      "amenities": ["Free WiFi", "Breakfast Included", "Excursion Desk", "Air Conditioning"],
+      "description": "Simple clean budget stay in downtown Aswan close to the train station and spice market.",
+      "location": { "latitude": 24.0921, "longitude": 32.8991, "address": "Keylany St, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_080",
+      "name": "Fairmont Riyadh",
+      "city": "Riyadh",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 330.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg",
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg"
+      ],
+      "amenities": ["Business Gate Location", "Gentlemen Spa", "Indoor Pool", "Free WiFi"],
+      "description": "Situated inside the Business Gate complex, tailored for executive luxury corporate stays.",
+      "location": { "latitude": 24.8121, "longitude": 46.7112, "address": "Business Gate, Qurtubah, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_081",
+      "name": "Anantara Eastern Mangroves",
+      "city": "Abu Dhabi",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 270.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg"
+      ],
+      "amenities": ["Mangrove Kayaking", "Turkish Bath", "Infinity Pool", "Roof Lounge"],
+      "description": "Flanked by a protected natural mangrove lagoon, offering quiet kayaking experiences inside the city.",
+      "location": { "latitude": 24.4481, "longitude": 54.4381, "address": "Sheikh Zayed Street, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_082",
+      "name": "Ashar Tented Resort",
+      "city": "AlUla",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 590.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1601918774946-25832a4be0d6",
+        "https://images.pexels.com/photos/7974836/pexels-photo-7974836.jpeg"
+      ],
+      "amenities": ["Private Campfire", "Desert Safari", "Organic Dinner", "Free WiFi"],
+      "description": "Traditional Bedouin tent luxury camp equipped with full modern amenities beneath dark sky stars.",
+      "location": { "latitude": 26.6712, "longitude": 37.9112, "address": "Ashar Valley Camp Area, AlUla, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_083",
+      "name": "Sura Hagia Sophia Hotel",
+      "city": "Istanbul",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 220.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg",
+        "https://images.pexels.com/photos/12805883/pexels-photo-12805883.jpeg"
+      ],
+      "amenities": ["Botanical Garden Pool", "Free Afternoon Tea", "Ottoman Hammam", "Free WiFi"],
+      "description": "Located directly across Hagia Sophia and Blue Mosque with a tranquil central outdoor garden pool.",
+      "location": { "latitude": 41.0089, "longitude": 28.9765, "address": "Ticarethane Sk. No:10, Sultanahmet, Istanbul, Turkey" }
+    },
+    {
+      "id": "hotel_084",
+      "name": "Safir Hotel Cairo",
+      "city": "Cairo",
+      "rating": 4.2,
+      "pricePerNight": { "amount": 105.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Outdoor Pool", "Dokki Location", "Sauna", "Free WiFi", "Buffet"],
+      "description": "Well-established commercial hotel situated in Dokki, Dokki square nearby metro connections.",
+      "location": { "latitude": 30.0381, "longitude": 31.2112, "address": "Missaq Square, Dokki, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_085",
+      "name": "Grand Nile Tower",
+      "city": "Cairo",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 160.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/17495859/pexels-photo-17495859.jpeg",
+        "https://images.pexels.com/photos/33376434/pexels-photo-33376434.jpeg"
+      ],
+      "amenities": ["Revolving Restaurant", "Private Yacht", "Nile View", "Pool", "Free WiFi"],
+      "description": "Features a famous revolving restaurant on the 41st floor providing 360-degree views of Cairo.",
+      "location": { "latitude": 30.0321, "longitude": 31.2261, "address": "Corniche El Nile, Garden City, Cairo, Egypt" }
+    },
+    {
+      "id": "hotel_086",
+      "name": "Barceló Cairo Pyramids",
+      "city": "Giza",
+      "rating": 4.1,
+      "pricePerNight": { "amount": 75.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Rooftop Pool", "Pyramids View", "Free WiFi", "Shuttle Service"],
+      "description": "Situated on Haram Avenue, offering simple contemporary rooms and direct access to Pyramids plateau.",
+      "location": { "latitude": 29.9981, "longitude": 31.1812, "address": "229 Al Haram St, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_087",
+      "name": "Amwaj Oyoun Resort & Spa",
+      "city": "Sharm El Sheikh",
+      "rating": 4.1,
+      "pricePerNight": { "amount": 85.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1540541338287-41700207dee6"
+      ],
+      "amenities": ["Water Slides", "Private Beach", "Snorkeling Jetty", "Free Parking"],
+      "description": "Nabq Bay resort boasting a long wooden pier into deep waters for coral reef diving.",
+      "location": { "latitude": 28.0281, "longitude": 34.4381, "address": "Nabq Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_088",
+      "name": "Sofitel Dubai The Palm",
+      "city": "Dubai",
+      "rating": 4.8,
+      "pricePerNight": { "amount": 490.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791",
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg"
+      ],
+      "amenities": ["Polynesian Theme", "Vertical Gardens", "Amrita Spa", "Private Beach"],
+      "description": "Polynesian-themed island sanctuary complete with living green walls and exotic landscaping.",
+      "location": { "latitude": 25.1312, "longitude": 55.1412, "address": "East Crescent, Palm Jumeirah, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_089",
+      "name": "Grand Hyatt Dubai",
+      "city": "Dubai",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 280.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14036444/pexels-photo-14036444.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Indoor Tropical Forest", "Resort Pool", "13 Restaurants", "Ahasees Spa"],
+      "description": "Set amidst 37 acres of landscaped gardens featuring an indoor tropical atrium with streams and bridges.",
+      "location": { "latitude": 25.2281, "longitude": 55.3281, "address": "Riyadh Street, Oud Metha, Dubai, UAE" }
+    },
+    {
+      "id": "hotel_090",
+      "name": "Amanruya Bodrum",
+      "city": "Istanbul",
+      "rating": 4.9,
+      "pricePerNight": { "amount": 1250.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+        "https://images.pexels.com/photos/20007351/pexels-photo-20007351.jpeg"
+      ],
+      "amenities": ["Private Pool Pavilion", "Beach Club", "Olive Groves", "Free WiFi"],
+      "description": "Secluded stone pavilions with private green marble pools tucked into peaceful Mediterranean pine forests.",
+      "location": { "latitude": 37.0812, "longitude": 27.4512, "address": "Göltürkbükü, Bodrum, Muğla, Turkey" }
+    },
+    {
+      "id": "hotel_091",
+      "name": "Swiss Inn Resort Hurghada",
+      "city": "Hurghada",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 110.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/8089070/pexels-photo-8089070.jpeg"
+      ],
+      "amenities": ["Fine Sand Beach", "Private Marina", "Fitness Center", "Free WiFi"],
+      "description": "Located directly on Hurghada Promenade with shallow calm ocean shorelines.",
+      "location": { "latitude": 27.1651, "longitude": 33.8281, "address": "El Nasr Avenue, Hurghada, Egypt" }
+    },
+    {
+      "id": "hotel_092",
+      "name": "Sonesta St. George Nile Cruise",
+      "city": "Aswan",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 280.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+        "https://images.pexels.com/photos/33636636/pexels-photo-33636636.jpeg"
+      ],
+      "amenities": ["Floating Hotel", "French Country Decor", "Pool Deck", "Full Board"],
+      "description": "Elegant 5-star floating hotel cruising between Aswan and Luxor, styled in classic European motif.",
+      "location": { "latitude": 24.0881, "longitude": 32.8881, "address": "Nile Corniche Dock, Aswan, Egypt" }
+    },
+    {
+      "id": "hotel_093",
+      "name": "Movenpick Hotel Riyadh",
+      "city": "Riyadh",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 210.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/36852529/pexels-photo-36852529.jpeg"
+      ],
+      "amenities": ["Anardana Restaurant", "Outdoor Pool", "Fitness Center", "Free WiFi"],
+      "description": "Located near King Abdullah Financial District (KAFD) with contemporary business amenities.",
+      "location": { "latitude": 24.7512, "longitude": 46.6481, "address": "Northern Ring Rd, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_094",
+      "name": "Sahara Resort & Glamping",
+      "city": "AlUla",
+      "rating": 4.3,
+      "pricePerNight": { "amount": 310.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1601918774946-25832a4be0d6"
+      ],
+      "amenities": ["Glamping Pods", "Campfire", "Buffet Dinner", "Desert Tours"],
+      "description": "Affordable canyon glamping option tucked behind rock arches in central AlUla.",
+      "location": { "latitude": 26.6312, "longitude": 37.8812, "address": "Sultanah Area, AlUla, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_095",
+      "name": "InterContinental Abu Dhabi",
+      "city": "Abu Dhabi",
+      "rating": 4.6,
+      "pricePerNight": { "amount": 210.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/6010287/pexels-photo-6010287.jpeg",
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg"
+      ],
+      "amenities": ["Private Marina", "Bayshore Beach Club", "Fishmarket Dining", "Free WiFi"],
+      "description": "Historic landmark resort featuring its own private luxury yacht marina and beachfront club.",
+      "location": { "latitude": 24.4581, "longitude": 54.3281, "address": "King Abdullah Bin Abdulaziz Al Saud St, Abu Dhabi, UAE" }
+    },
+    {
+      "id": "hotel_096",
+      "name": "Swissôtel Living Jeddah",
+      "city": "Riyadh",
+      "rating": 4.4,
+      "pricePerNight": { "amount": 195.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/7746576/pexels-photo-7746576.jpeg"
+      ],
+      "amenities": ["Rooftop Pool", "Apartment Suites", "Free WiFi", "Kitchenette"],
+      "description": "Serviced luxury studio apartments tailored for long-term business or family stays.",
+      "location": { "latitude": 24.7112, "longitude": 46.6712, "address": "Olaya District, Riyadh, Saudi Arabia" }
+    },
+    {
+      "id": "hotel_097",
+      "name": "Hilton Pyramids Golf Resort",
+      "city": "Giza",
+      "rating": 4.2,
+      "pricePerNight": { "amount": 110.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg"
+      ],
+      "amenities": ["27-Hole Golf Course", "Fairway Views", "Pool", "Free WiFi", "Spa"],
+      "description": "Situated in 6th of October City overlooking a championship 27-hole golf fairways system.",
+      "location": { "latitude": 29.9612, "longitude": 31.0281, "address": "Dreamland, 6th of October City, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_098",
+      "name": "Pyramids Planet Hotel",
+      "city": "Giza",
+      "rating": 4.0,
+      "pricePerNight": { "amount": 50.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368"
+      ],
+      "amenities": ["Rooftop Cafe", "Direct Sphinx View", "Free Breakfast", "Airport Shuttle"],
+      "description": "Simple boutique hotel with front-row view of the Pyramids entrance and ticket booth.",
+      "location": { "latitude": 29.9751, "longitude": 31.1371, "address": "Nazlet El-Semman, Giza, Egypt" }
+    },
+    {
+      "id": "hotel_099",
+      "name": "Mövenpick Resort Sharm El Sheikh",
+      "city": "Sharm El Sheikh",
+      "rating": 4.5,
+      "pricePerNight": { "amount": 150.00, "currency": "USD" },
+      "images": [
+        "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
+        "https://images.pexels.com/photos/7166944/pexels-photo-7166944.jpeg"
+      ],
+      "amenities": ["Arabian Architecture", "4 Private Beaches", "Horse Riding", "Coral Reef"],
+      "description": "Perched on a cliff overlooking Naama Bay with 4 private beaches and riding stables.",
+      "location": { "latitude": 27.9181, "longitude": 34.3381, "address": "Naama Bay, Sharm El Sheikh, Egypt" }
+    },
+    {
+      "id": "hotel_100",
+      "name": "The Westin Cairo Golf Resort & Spa",
+      "city": "Cairo",
+      "rating": 4.7,
+      "pricePerNight": { "amount": 220.00, "currency": "USD" },
+      "images": [
+        "https://images.pexels.com/photos/37433411/pexels-photo-37433411.jpeg",
+        "https://images.pexels.com/photos/25025606/pexels-photo-25025606.jpeg"
+      ],
+      "amenities": ["27-Hole Golf Course", "Heavenly Spa", "Heated Pool", "Free WiFi"],
+      "description": "A quiet resort enclave inside Katameya Dunes featuring an expansive 27-hole championship golf course.",
+      "location": { "latitude": 29.9812, "longitude": 31.4812, "address": "Katameya Dunes, New Cairo, Cairo, Egypt" }
+    }
+  ]
+}
