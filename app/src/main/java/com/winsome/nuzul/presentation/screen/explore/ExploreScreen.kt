@@ -11,28 +11,31 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.MaterialTheme.typography
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.winsome.nuzul.presentation.ui.theme.NuzulTheme
 
 @Composable
-fun ExploreScreen() {
-    var state by remember { mutableStateOf(Unit) }
-    ExploreScreenContent(state) {}
+fun ExploreScreen(
+    viewModel: ExploreViewModel,
+    onHotelClick: (String) -> Unit
+) {
+    val state by viewModel.state.collectAsStateWithLifecycle()
+
+    ExploreScreenContent(state, onHotelClick)
 }
 
 @Composable
 private fun ExploreScreenContent(
     state: Unit, // use your screen's state
-    onAction: () -> Unit
+    onHotelClick: (String) -> Unit
 ) = Column(
     modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())
         .padding(16.dp).imePadding(),
@@ -44,6 +47,14 @@ private fun ExploreScreenContent(
         style = typography.headlineMedium,
         color = colorScheme.onBackground
     )
+
+    repeat(5) {
+        OutlinedButton(
+            onClick = { onHotelClick("hotel_$it") }
+        ) {
+            Text("Hotel $it")
+        }
+    }
 }
 
 @Preview(showBackground = true, showSystemUi = true)

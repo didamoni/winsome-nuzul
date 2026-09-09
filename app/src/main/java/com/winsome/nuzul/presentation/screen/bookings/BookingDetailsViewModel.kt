@@ -2,16 +2,23 @@ package com.winsome.nuzul.presentation.screen.bookings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.assisted.Assisted
+import dagger.assisted.AssistedFactory
+import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class BookingDetailsViewModel @Inject constructor(
-    // private val useCase: Unit
+@HiltViewModel(assistedFactory = BookingDetailsViewModel.Factory::class)
+class BookingDetailsViewModel @AssistedInject constructor(
+    @Assisted val reference: String
 ) : ViewModel() {
+
+    @AssistedFactory
+    interface Factory {
+        fun create(reference: String): BookingDetailsViewModel
+    }
 
     private val _state = MutableStateFlow(Unit)
     val state = _state.asStateFlow()

@@ -9,30 +9,33 @@ import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.MaterialTheme.typography
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.winsome.nuzul.presentation.ui.theme.NuzulTheme
 
 @Composable
-fun BookingsScreen() {
-    var state by remember { mutableStateOf(Unit) }
-    BookingsScreenContent(state) {}
+fun BookingsScreen(
+    viewModel: BookingsViewModel,
+    onBookingClick: (String) -> Unit
+) {
+    val state by viewModel.state.collectAsStateWithLifecycle()
+
+    BookingsScreenContent(state, onBookingClick)
 }
 
 @Composable
 private fun BookingsScreenContent(
     state: Unit, // use your screen's state
-    onAction: () -> Unit
+    onBookingClick: (String) -> Unit
 ) = Column(
     modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())
         .padding(16.dp).imePadding(),
@@ -44,6 +47,14 @@ private fun BookingsScreenContent(
         style = typography.headlineMedium,
         color = colorScheme.onBackground
     )
+
+    repeat(5) {
+        Button(
+            onClick = { onBookingClick("booking_$it") }
+        ) {
+            Text("Booking $it")
+        }
+    }
 }
 
 @Preview(showBackground = true, showSystemUi = true)

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Nuzul</string>
+    <string name="explore">Explore</string>
+    <string name="favorites">Favorites</string>
+    <string name="bookings">Bookings</string>
 </resources>
