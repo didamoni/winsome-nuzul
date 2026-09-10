@@ -11,57 +11,57 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val LightColorScheme = lightColorScheme(
-    primary = DeepEvergreen,
-    onPrimary = PureWhite,
-    primaryContainer = SoftSand,
-    onPrimaryContainer = DeepEvergreen,
+    primary = ImperialEvergreen,
+    onPrimary = PureSilkWhite,
+    primaryContainer = SoftTravertine,
+    onPrimaryContainer = ImperialEvergreen,
 
-    secondary = Forest,
-    onSecondary = PureWhite,
-    secondaryContainer = SoftSand,
-    onSecondaryContainer = Charcoal,
+    secondary = OliveDriftwood,
+    onSecondary = PureSilkWhite,
+    secondaryContainer = SoftTravertine,
+    onSecondaryContainer = ObsidianCharcoal,
 
-    tertiary = Champagne,
-    onTertiary = DeepEvergreen,
-    tertiaryContainer = SoftSand,
-    onTertiaryContainer = Charcoal,
+    tertiary = BurnishedGold,
+    onTertiary = PureSilkWhite,
+    tertiaryContainer = SoftTravertine,
+    onTertiaryContainer = ObsidianCharcoal,
 
-    background = WarmIvory,
-    onBackground = Charcoal,
+    background = WarmAlabaster,
+    onBackground = ObsidianCharcoal,
 
-    surface = PureWhite,
-    onSurface = Charcoal,
-    surfaceVariant = SoftSand,
-    onSurfaceVariant = MutedGray,
+    surface = PureSilkWhite,
+    onSurface = ObsidianCharcoal,
+    surfaceVariant = SoftTravertine,
+    onSurfaceVariant = MutedSlateStone,
 
-    outline = DividerColor,
-    outlineVariant = DividerColor.copy(alpha = 0.5f)
+    outline = FineLinenBorder,
+    outlineVariant = FineLinenBorder.copy(alpha = 0.6f)
 )
 
 private val DarkColorScheme = darkColorScheme(
-    primary = SeaGlass,
-    onPrimary = DeepEvergreen,
-    primaryContainer = Forest,
-    onPrimaryContainer = WarmIvory,
+    primary = RadiantGold,
+    onPrimary = DarkOilNoir,
+    primaryContainer = ElevatedCanopy,
+    onPrimaryContainer = RadiantGold,
 
-    secondary = Champagne,
-    onSecondary = DeepEvergreen,
-    secondaryContainer = Forest,
-    onSecondaryContainer = WarmIvory,
+    secondary = VividMineralJade,
+    onSecondary = DarkOilNoir,
+    secondaryContainer = ElevatedCanopy,
+    onSecondaryContainer = WarmIvoryText,
 
-    tertiary = Champagne,
-    onTertiary = DeepEvergreen,
+    tertiary = RadiantGold,
+    onTertiary = DarkOilNoir,
 
-    background = DeepEvergreen,
-    onBackground = WarmIvory,
+    background = DarkOilNoir,
+    onBackground = WarmIvoryText,
 
-    surface = Forest,
-    onSurface = WarmIvory,
-    surfaceVariant = DeepEvergreen.copy(alpha = 0.7f),
-    onSurfaceVariant = SeaGlass,
+    surface = DeepOliveForest,
+    onSurface = WarmIvoryText,
+    surfaceVariant = ElevatedCanopy,
+    onSurfaceVariant = PaleOliveMuted,
 
-    outline = Forest.copy(alpha = 0.7f),
-    outlineVariant = Forest
+    outline = DarkOliveBorder,
+    outlineVariant = DarkOliveBorder.copy(alpha = 0.7f)
 )
 
 @Composable

@@ -1,5 +1,6 @@
 package com.winsome.nuzul.presentation.ui.theme
 
+import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -49,10 +50,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -68,7 +71,7 @@ fun NuzulDesignSystemBoard() {
             verticalArrangement = Arrangement.spacedBy(36.dp),
             modifier = Modifier.fillMaxSize()
         ) {
-            // 1. Wordmark & Identity
+            // 1. Identity & Wordmark
             item {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
@@ -85,49 +88,64 @@ fun NuzulDesignSystemBoard() {
                     )
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
-                        text = "HOTEL EXPLORER • DESIGN SYSTEM",
+                        text = "BOTANICAL & DARK OIL LUXURY",
                         style = MaterialTheme.typography.labelSmall.copy(
-                            letterSpacing = 2.sp
+                            letterSpacing = 2.sp,
+                            fontWeight = FontWeight.Bold
                         ),
                         color = MaterialTheme.colorScheme.tertiary,
                         textAlign = TextAlign.Center
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = "Quiet Luxury • Material 3 • Native Android",
+                        text = "High-Contrast Emerald • Dark Olive Noir • Radiant Gold",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
             }
 
-            // 2. Color Palette Swatches
+            // 2. Color Swatches (Showcasing the new Rich Tokens)
             item {
-                SectionHeader(title = "01 / COLOR PALETTE")
+                SectionHeader(title = "01 / CORE COLOR SWATCHES")
                 Spacer(modifier = Modifier.height(14.dp))
 
+                Text(
+                    text = "Dark Olive & Oil Palette",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(modifier = Modifier.height(8.dp))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(10.dp)
                 ) {
-                    ColorSwatch("Deep Evergreen\n#1F2A28", DeepEvergreen, PureWhite, Modifier.weight(1f))
-                    ColorSwatch("Forest\n#30403C", Forest, PureWhite, Modifier.weight(1f))
-                    ColorSwatch("Champagne\n#C5A46D", Champagne, Charcoal, Modifier.weight(1f))
-                    ColorSwatch("Sea Glass\n#78948C", SeaGlass, PureWhite, Modifier.weight(1f))
+                    ColorSwatch("Dark Oil Noir\n#0A1210", DarkOilNoir, WarmIvoryText, Modifier.weight(1f))
+                    ColorSwatch("Deep Olive\n#13201C", DeepOliveForest, WarmIvoryText, Modifier.weight(1f))
+                    ColorSwatch("Radiant Gold\n#DDBE86", RadiantGold, DarkOilNoir, Modifier.weight(1f))
+                    ColorSwatch("Mineral Jade\n#4EA388", VividMineralJade, DarkOilNoir, Modifier.weight(1f))
                 }
-                Spacer(modifier = Modifier.height(10.dp))
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                Text(
+                    text = "Warm Alabaster & Imperial Pine Palette",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(modifier = Modifier.height(8.dp))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(10.dp)
                 ) {
-                    ColorSwatch("Warm Ivory\n#F7F4EE", WarmIvory, Charcoal, Modifier.weight(1f), hasBorder = true)
-                    ColorSwatch("Soft Sand\n#EAE3D7", SoftSand, Charcoal, Modifier.weight(1f))
-                    ColorSwatch("Pure White\n#FFFDFC", PureWhite, Charcoal, Modifier.weight(1f), hasBorder = true)
-                    ColorSwatch("Charcoal\n#202321", Charcoal, PureWhite, Modifier.weight(1f))
+                    ColorSwatch("Imperial Pine\n#112620", ImperialEvergreen, PureSilkWhite, Modifier.weight(1f))
+                    ColorSwatch("Warm Alabaster\n#F6F3EC", WarmAlabaster, ObsidianCharcoal, Modifier.weight(1f), hasBorder = true)
+                    ColorSwatch("Soft Travertine\n#E8E0D2", SoftTravertine, ObsidianCharcoal, Modifier.weight(1f))
+                    ColorSwatch("Burnished Gold\n#B8934E", BurnishedGold, PureSilkWhite, Modifier.weight(1f))
                 }
             }
 
-            // 3. Typography Scale
+            // 3. Typography Hierarchy
             item {
                 SectionHeader(title = "02 / TYPOGRAPHY SCALE")
                 Spacer(modifier = Modifier.height(14.dp))
@@ -135,6 +153,9 @@ fun NuzulDesignSystemBoard() {
                 Card(
                     shape = MaterialTheme.shapes.large,
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                    border = CardDefaults.outlinedCardBorder().copy(
+                        brush = androidx.compose.ui.graphics.SolidColor(MaterialTheme.colorScheme.outline)
+                    ),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Column(
@@ -142,7 +163,7 @@ fun NuzulDesignSystemBoard() {
                         verticalArrangement = Arrangement.spacedBy(12.dp)
                     ) {
                         Text(
-                            text = "Serif Display Large — Sanctuary of Calm",
+                            text = "Serif Display — Sanctuary of Calm",
                             style = MaterialTheme.typography.displayMedium,
                             color = MaterialTheme.colorScheme.onSurface
                         )
@@ -154,12 +175,12 @@ fun NuzulDesignSystemBoard() {
                         )
                         HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
                         Text(
-                            text = "Sans Title Large — Deluxe Royal Suite with Nile View",
+                            text = "Sans Title Large — Royal Villa with Private Red Sea Reef",
                             style = MaterialTheme.typography.titleLarge,
                             color = MaterialTheme.colorScheme.onSurface
                         )
                         Text(
-                            text = "Body Medium — Experience refined architecture, tranquil sea breezes, and personalized concierge care in a serene coastal atmosphere.",
+                            text = "Body Medium — Indulge in private courtyards, marble baths, and handcrafted dining set against tranquil coastal palm trees.",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -172,16 +193,16 @@ fun NuzulDesignSystemBoard() {
                 }
             }
 
-            // 4. Buttons (Material 3 with 12dp shape)
+            // 4. Action Buttons (Notice the vibrant Gold in Dark mode & Pine in Light mode)
             item {
-                SectionHeader(title = "03 / ACTION BUTTONS")
+                SectionHeader(title = "03 / BUTTONS (VIBRANT & INTENTIONAL)")
                 Spacer(modifier = Modifier.height(14.dp))
 
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    // Filled Button (Primary Evergreen)
+                    // Primary Action Button (Radiant Gold in Dark, Imperial Pine in Light)
                     Button(
                         onClick = {},
                         shape = MaterialTheme.shapes.medium,
@@ -193,16 +214,19 @@ fun NuzulDesignSystemBoard() {
                             .weight(1f)
                             .height(48.dp)
                     ) {
-                        Text("Reserve Stay", style = MaterialTheme.typography.labelLarge)
+                        Text(
+                            text = "Reserve Sanctuary",
+                            style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold)
+                        )
                     }
 
-                    // Tonal / Champagne Button
+                    // Tonal Button (Surface Variant Container)
                     Button(
                         onClick = {},
                         shape = MaterialTheme.shapes.medium,
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = MaterialTheme.colorScheme.tertiary,
-                            contentColor = MaterialTheme.colorScheme.onTertiary
+                            containerColor = MaterialTheme.colorScheme.surfaceVariant,
+                            contentColor = MaterialTheme.colorScheme.onSurface
                         ),
                         modifier = Modifier
                             .weight(1f)
@@ -218,22 +242,19 @@ fun NuzulDesignSystemBoard() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    // Outlined Button
                     OutlinedButton(
                         onClick = {},
                         shape = MaterialTheme.shapes.medium,
-                        border = ButtonDefaults.outlinedButtonBorder(enabled = true).let {
-                            val color = MaterialTheme.colorScheme.primary
-                            androidx.compose.foundation.BorderStroke(it.width, color)
-                        },
+                        border = ButtonDefaults.outlinedButtonBorder.copy(
+                            brush = androidx.compose.ui.graphics.SolidColor(MaterialTheme.colorScheme.outline)
+                        ),
                         modifier = Modifier
                             .weight(1f)
                             .height(48.dp)
                     ) {
-                        Text("View Details", color = MaterialTheme.colorScheme.primary)
+                        Text("View Details", color = MaterialTheme.colorScheme.onSurface)
                     }
 
-                    // Text Button
                     TextButton(
                         onClick = {},
                         shape = MaterialTheme.shapes.medium,
@@ -299,6 +320,11 @@ fun NuzulDesignSystemBoard() {
                         colors = FilterChipDefaults.filterChipColors(
                             selectedContainerColor = MaterialTheme.colorScheme.primary,
                             selectedLabelColor = MaterialTheme.colorScheme.onPrimary
+                        ),
+                        border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = true,
+                            borderColor = Color.Transparent
                         )
                     )
                     FilterChip(
@@ -309,16 +335,26 @@ fun NuzulDesignSystemBoard() {
                         colors = FilterChipDefaults.filterChipColors(
                             containerColor = MaterialTheme.colorScheme.surface,
                             labelColor = MaterialTheme.colorScheme.onSurface
+                        ),
+                        border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = false,
+                            borderColor = MaterialTheme.colorScheme.outline
                         )
                     )
                     FilterChip(
                         selected = false,
                         onClick = {},
-                        label = { Text("Aswan") },
+                        label = { Text("Hurghada") },
                         shape = MaterialTheme.shapes.small,
                         colors = FilterChipDefaults.filterChipColors(
                             containerColor = MaterialTheme.colorScheme.surface,
                             labelColor = MaterialTheme.colorScheme.onSurface
+                        ),
+                        border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = false,
+                            borderColor = MaterialTheme.colorScheme.outline
                         )
                     )
                     FilterChip(
@@ -329,45 +365,52 @@ fun NuzulDesignSystemBoard() {
                         colors = FilterChipDefaults.filterChipColors(
                             containerColor = MaterialTheme.colorScheme.surface,
                             labelColor = MaterialTheme.colorScheme.onSurface
+                        ),
+                        border = FilterChipDefaults.filterChipBorder(
+                            enabled = true,
+                            selected = false,
+                            borderColor = MaterialTheme.colorScheme.outline
                         )
                     )
                 }
             }
 
-            // 7. Hotel Card & Editorial Photography Showcase
+            // 7. Quiet Luxury Hotel Card Treatment
             item {
-                SectionHeader(title = "06 / HOTEL CARD TREATMENT (QUIET LUXURY)")
+                SectionHeader(title = "06 / HOTEL CARD (RICH SURFACE CONTRAST)")
                 Spacer(modifier = Modifier.height(14.dp))
 
                 Card(
                     shape = MaterialTheme.shapes.large,
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-                    elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
+                    border = CardDefaults.outlinedCardBorder().copy(
+                        brush = androidx.compose.ui.graphics.SolidColor(MaterialTheme.colorScheme.outline)
+                    ),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Column {
-                        // Image Placeholder simulating rich photography
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(220.dp)
-                                .background(Forest)
+                                .height(210.dp)
+                                .background(DeepOliveForest)
                         ) {
-                            // Textural mock image tone
+                            // Rich Botanical Vignette
                             Box(
                                 modifier = Modifier
                                     .fillMaxSize()
                                     .background(
-                                        brush = androidx.compose.ui.graphics.Brush.verticalGradient(
-                                            colors = listOf(Color.Transparent, DeepEvergreen.copy(alpha = 0.6f))
+                                        Brush.verticalGradient(
+                                            colors = listOf(Color.Transparent, DarkOilNoir.copy(alpha = 0.65f))
                                         )
                                     )
                             )
 
-                            // Rating pill
+                            // Rating Pill (Champagne Gold + Deep Oil)
                             Surface(
                                 shape = RoundedCornerShape(8.dp),
-                                color = WarmIvory.copy(alpha = 0.95f),
+                                color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f),
                                 modifier = Modifier
                                     .padding(14.dp)
                                     .align(Alignment.TopStart)
@@ -379,7 +422,7 @@ fun NuzulDesignSystemBoard() {
                                     Icon(
                                         imageVector = Icons.Default.Star,
                                         contentDescription = null,
-                                        tint = Champagne,
+                                        tint = MaterialTheme.colorScheme.tertiary,
                                         modifier = Modifier.size(14.dp)
                                     )
                                     Spacer(modifier = Modifier.width(4.dp))
@@ -387,15 +430,15 @@ fun NuzulDesignSystemBoard() {
                                         text = "4.9",
                                         style = MaterialTheme.typography.labelMedium,
                                         fontWeight = FontWeight.Bold,
-                                        color = Charcoal
+                                        color = MaterialTheme.colorScheme.onSurface
                                     )
                                 }
                             }
 
-                            // Favorite button
+                            // Favorite Button
                             Surface(
                                 shape = CircleShape,
-                                color = WarmIvory.copy(alpha = 0.95f),
+                                color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f),
                                 modifier = Modifier
                                     .padding(14.dp)
                                     .size(36.dp)
@@ -405,24 +448,22 @@ fun NuzulDesignSystemBoard() {
                                     Icon(
                                         imageVector = Icons.Filled.Favorite,
                                         contentDescription = null,
-                                        tint = DeepEvergreen,
+                                        tint = Color(0xFFC0392B),
                                         modifier = Modifier.size(18.dp)
                                     )
                                 }
                             }
 
-                            // Subtitle inside hero photo
                             Text(
                                 text = "Sahl Hasheesh, Hurghada",
                                 style = MaterialTheme.typography.bodySmall,
-                                color = WarmIvory.copy(alpha = 0.85f),
+                                color = WarmIvoryText.copy(alpha = 0.85f),
                                 modifier = Modifier
                                     .align(Alignment.BottomStart)
                                     .padding(14.dp)
                             )
                         }
 
-                        // Editorial Hotel Details
                         Column(modifier = Modifier.padding(18.dp)) {
                             Text(
                                 text = "The Oberoi Beach Resort",
@@ -434,7 +475,7 @@ fun NuzulDesignSystemBoard() {
                                 Icon(
                                     imageVector = Icons.Outlined.LocationOn,
                                     contentDescription = null,
-                                    tint = SeaGlass,
+                                    tint = MaterialTheme.colorScheme.secondary,
                                     modifier = Modifier.size(15.dp)
                                 )
                                 Spacer(modifier = Modifier.width(4.dp))
@@ -449,7 +490,7 @@ fun NuzulDesignSystemBoard() {
                             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
                             Spacer(modifier = Modifier.height(14.dp))
 
-                            // Price & VAT Treatment
+                            // Price & VAT Treatment with Baseline Alignment
                             Row(
                                 modifier = Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.SpaceBetween,
@@ -461,22 +502,23 @@ fun NuzulDesignSystemBoard() {
                                         style = MaterialTheme.typography.labelSmall.copy(letterSpacing = 1.sp),
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
-                                    Text(
-                                        text = androidx.compose.ui.text.buildAnnotatedString {
-                                            append("SAR 1,150")
-                                            withStyle(
-                                                style = MaterialTheme.typography.bodySmall.toSpanStyle().copy(
-                                                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                                                )
-                                            ) {
-                                                append(" / night")
-                                            }
-                                        },
-                                        style = MaterialTheme.typography.titleLarge.copy(
-                                            fontWeight = FontWeight.Bold
-                                        ),
-                                        color = MaterialTheme.colorScheme.primary
-                                    )
+                                    Row {
+                                        Text(
+                                            text = "SAR 1,150",
+                                            style = MaterialTheme.typography.titleLarge.copy(
+                                                fontWeight = FontWeight.Bold,
+                                                fontSize = 20.sp
+                                            ),
+                                            color = MaterialTheme.colorScheme.primary,
+                                            modifier = Modifier.alignByBaseline()
+                                        )
+                                        Text(
+                                            text = " / night",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            modifier = Modifier.alignByBaseline()
+                                        )
+                                    }
                                     Text(
                                         text = "Includes 15% VAT & resort fees",
                                         style = MaterialTheme.typography.bodySmall.copy(fontSize = 10.sp),
@@ -488,10 +530,14 @@ fun NuzulDesignSystemBoard() {
                                     onClick = {},
                                     shape = MaterialTheme.shapes.medium,
                                     colors = ButtonDefaults.buttonColors(
-                                        containerColor = MaterialTheme.colorScheme.primary
+                                        containerColor = MaterialTheme.colorScheme.primary,
+                                        contentColor = MaterialTheme.colorScheme.onPrimary
                                     )
                                 ) {
-                                    Text("Reserve", style = MaterialTheme.typography.labelMedium)
+                                    Text(
+                                        text = "Reserve",
+                                        style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.Bold)
+                                    )
                                 }
                             }
                         }
@@ -501,44 +547,69 @@ fun NuzulDesignSystemBoard() {
 
             // 8. Navigation Bar Sample
             item {
-                SectionHeader(title = "07 / BOTTOM NAVIGATION")
+                SectionHeader(title = "07 / BOTTOM NAVIGATION (ZERO PURPLE OVERLAY)")
                 Spacer(modifier = Modifier.height(14.dp))
+
+                val outlineColor = MaterialTheme.colorScheme.outlineVariant
 
                 NavigationBar(
                     containerColor = MaterialTheme.colorScheme.surface,
-                    tonalElevation = 2.dp,
+                    tonalElevation = 0.dp,
                     modifier = Modifier
                         .fillMaxWidth()
                         .clip(MaterialTheme.shapes.large)
-                        .border(1.dp, MaterialTheme.colorScheme.outlineVariant, MaterialTheme.shapes.large)
+                        .drawBehind {
+                            drawLine(
+                                color = outlineColor,
+                                start = Offset(0f, 0f),
+                                end = Offset(size.width, 0f),
+                                strokeWidth = 1.dp.toPx()
+                            )
+                        }
                 ) {
                     NavigationBarItem(
                         selected = true,
+                        enabled = true,
                         onClick = {},
                         icon = { Icon(Icons.Outlined.Explore, contentDescription = "Explore") },
-                        label = { Text("Explore", style = MaterialTheme.typography.labelSmall) },
+                        label = {
+                            Text(
+                                "Explore",
+                                style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold)
+                            )
+                        },
                         colors = NavigationBarItemDefaults.colors(
                             selectedIconColor = MaterialTheme.colorScheme.primary,
                             selectedTextColor = MaterialTheme.colorScheme.primary,
-                            indicatorColor = MaterialTheme.colorScheme.primaryContainer
-                        )
-                    )
-                    NavigationBarItem(
-                        selected = false,
-                        onClick = {},
-                        icon = { Icon(Icons.Outlined.FavoriteBorder, contentDescription = "Favorites") },
-                        label = { Text("Favorites", style = MaterialTheme.typography.labelSmall) },
-                        colors = NavigationBarItemDefaults.colors(
+                            indicatorColor = MaterialTheme.colorScheme.surfaceVariant,
                             unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
                             unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     )
                     NavigationBarItem(
                         selected = false,
+                        enabled = true,
+                        onClick = {},
+                        icon = { Icon(Icons.Outlined.FavoriteBorder, contentDescription = "Favorites") },
+                        label = { Text("Favorites", style = MaterialTheme.typography.labelSmall) },
+                        colors = NavigationBarItemDefaults.colors(
+                            selectedIconColor = MaterialTheme.colorScheme.primary,
+                            selectedTextColor = MaterialTheme.colorScheme.primary,
+                            indicatorColor = MaterialTheme.colorScheme.surfaceVariant,
+                            unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                            unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    )
+                    NavigationBarItem(
+                        selected = false,
+                        enabled = true,
                         onClick = {},
                         icon = { Icon(Icons.Outlined.BookmarkBorder, contentDescription = "Bookings") },
                         label = { Text("Bookings", style = MaterialTheme.typography.labelSmall) },
                         colors = NavigationBarItemDefaults.colors(
+                            selectedIconColor = MaterialTheme.colorScheme.primary,
+                            selectedTextColor = MaterialTheme.colorScheme.primary,
+                            indicatorColor = MaterialTheme.colorScheme.surfaceVariant,
                             unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
                             unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -550,7 +621,7 @@ fun NuzulDesignSystemBoard() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Design System Supporting UI
+// Supporting UI
 // ─────────────────────────────────────────────────────────────────────────────
 
 @Composable
@@ -579,7 +650,7 @@ private fun ColorSwatch(
             .clip(RoundedCornerShape(8.dp))
             .background(color)
             .then(
-                if (hasBorder) Modifier.border(1.dp, DividerColor, RoundedCornerShape(8.dp))
+                if (hasBorder) Modifier.border(1.dp, FineLinenBorder, RoundedCornerShape(8.dp))
                 else Modifier
             )
             .padding(8.dp),
@@ -598,7 +669,12 @@ private fun ColorSwatch(
 // Previews: Light and Dark Theme Boards
 // ─────────────────────────────────────────────────────────────────────────────
 
-@Preview(name = "Nuzul Design System • Light Theme", widthDp = 420, showBackground = true)
+@Preview(
+    name = "Nuzul Design System • Light Theme",
+    widthDp = 420,
+    showBackground = true,
+    uiMode = Configuration.UI_MODE_NIGHT_NO
+)
 @Composable
 fun NuzulDesignSystemLightPreview() {
     NuzulTheme(darkTheme = false) {
@@ -606,7 +682,12 @@ fun NuzulDesignSystemLightPreview() {
     }
 }
 
-@Preview(name = "NuzulDesign System • Dark Theme", widthDp = 420, showBackground = true)
+@Preview(
+    name = "Nuzul Design System • Dark Theme (Rich Dark Olive & Gold)",
+    widthDp = 420,
+    showBackground = true,
+    uiMode = Configuration.UI_MODE_NIGHT_YES
+)
 @Composable
 fun NuzulDesignSystemDarkPreview() {
     NuzulTheme(darkTheme = true) {
