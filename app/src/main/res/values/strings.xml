@@ -3,4 +3,53 @@
     <string name="explore">Explore</string>
     <string name="favorites">Favorites</string>
     <string name="bookings">Bookings</string>
+
+    <!-- Brand & Header -->
+    <string name="explore_brand_eyebrow">NUZUL SANCTUARIES</string>
+    <string name="explore_title">Find Your Stay</string>
+    <string name="explore_subtitle">Discover luxury hotels and tranquil retreats</string>
+
+    <!-- Search & Filters -->
+    <string name="explore_search_placeholder">Search by hotel name or city…</string>
+    <string name="explore_search_icon_desc">Search hotels</string>
+    <string name="explore_search_clear_desc">Clear search query</string>
+    <string name="explore_filter_button_desc">Open filter options</string>
+    <string name="explore_filter_chip_all">All Cities</string>
+    <string name="explore_clear_filters_action">Clear Filters</string>
+
+    <!-- Sections -->
+    <string name="explore_featured_section_title">Featured Sanctuaries</string>
+    <string name="explore_all_hotels_section_title">Available Hotels</string>
+    <string name="explore_hotels_in_city_title">Hotels in %1$s</string>
+
+    <!-- Hotel Card Details -->
+    <string name="explore_price_from">FROM</string>
+    <string name="explore_price_per_night">/ night</string>
+    <string name="explore_price_vat_notice">Includes 15% VAT &amp; fees</string>
+    <string name="explore_hotel_reserve_action">Reserve</string>
+    <string name="explore_hotel_view_details">View Details</string>
+    <string name="explore_favorite_icon_desc">Toggle favorite</string>
+    <string name="explore_rating_star_desc">Rating star</string>
+    <string name="explore_location_pin_desc">Hotel location</string>
+
+    <!-- Filter Bottom Sheet -->
+    <string name="explore_filter_sheet_title">Filter Hotels</string>
+    <string name="explore_filter_rating_header">Minimum Rating</string>
+    <string name="explore_filter_rating_any">Any</string>
+    <string name="explore_filter_rating_four">4.0★ &amp; above</string>
+    <string name="explore_filter_rating_four_five">4.5★ &amp; above</string>
+    <string name="explore_filter_rating_four_eight">4.8★ &amp; above</string>
+    <string name="explore_filter_price_header">Price per Night</string>
+    <string name="explore_filter_price_range_format">%1$s %2$d — %3$d</string>
+    <string name="explore_filter_reset_action">Reset</string>
+    <string name="explore_filter_apply_action">Apply Filters</string>
+
+    <!-- State Views -->
+    <string name="explore_empty_title">No Sanctuaries Found</string>
+    <string name="explore_empty_subtitle">We couldn’t find any hotels matching your current preferences.</string>
+    <string name="explore_empty_action">Reset All Filters</string>
+    <string name="explore_error_title">Connection Interrupted</string>
+    <string name="explore_error_retry_action">Retry</string>
+    <string name="explore_offline_notice">Offline mode • Showing cached sanctuaries</string>
+
 </resources>
