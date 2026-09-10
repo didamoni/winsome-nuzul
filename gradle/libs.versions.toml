@@ -7,7 +7,7 @@ espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.11.0"
 activityCompose = "1.13.0"
 kotlin = "2.4.20"
-composeBom = "2026.08.00"
+composeBom = "2026.09.00"
 
 serialization = "1.11.0"
 
@@ -20,7 +20,9 @@ navigation3 = "1.1.7"
 
 coil = "2.7.0"
 
-room = "2.8.4"
+room = "2.8.5"
+
+splashscreen = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -55,6 +57,8 @@ androidx-compose-material-icons-extended = { module = "androidx.compose.material
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
