@@ -97,4 +97,36 @@
     <string name="hotel_details_error_subtitle">We couldn’t retrieve the details for this hotel. Please try again.</string>
     <string name="hotel_details_error_back">Go Back</string>
 
+    <!-- Booking Screen -->
+    <string name="booking_brand_eyebrow">RESERVATION DETAILS</string>
+    <string name="booking_title">Complete Booking</string>
+    <string name="booking_subtitle">Configure your stay dates and room preferences</string>
+    <string name="booking_selected_sanctuary">Selected Sanctuary</string>
+    <string name="booking_dates_and_rooms">Dates &amp; Rooms</string>
+    <string name="booking_check_in_label">Check-in</string>
+    <string name="booking_check_out_label">Check-out</string>
+    <string name="booking_rooms_label">Rooms</string>
+    <string name="booking_rooms_count_single">%1$d Room</string>
+    <string name="booking_rooms_count_plural">%1$d Rooms</string>
+    <string name="booking_pricing_breakdown_title">Price Breakdown</string>
+    <string name="booking_pricing_rate_breakdown">%1$d nights × %2$d rooms</string>
+    <string name="booking_pricing_vat_label">15% VAT</string>
+    <string name="booking_pricing_total_label">Total (inc. VAT)</string>
+    <string name="booking_confirm_action">Confirm Reservation</string>
+
+    <!-- Date Picker & Dialogs -->
+    <string name="booking_date_picker_checkin_title">Select Check-in Date</string>
+    <string name="booking_date_picker_checkout_title">Select Check-out Date</string>
+    <string name="booking_date_picker_confirm">Select</string>
+    <string name="booking_date_picker_dismiss">Cancel</string>
+    <string name="booking_dialog_title">Confirm Reservation</string>
+    <string name="booking_dialog_message">Are you sure you want to reserve %1$s for %2$d nights at %3$s %4$d?</string>
+    <string name="booking_dialog_confirm">Confirm</string>
+    <string name="booking_dialog_cancel">Cancel</string>
+
+    <!-- Validation Errors -->
+    <string name="booking_error_checkout_before_checkin">Check-out date must be strictly after check-in date.</string>
+    <string name="booking_error_checkin_past">Check-in date cannot be in the past.</string>
+    <string name="booking_error_invalid_rooms">Number of rooms must be at least 1.</string>
+
 </resources>
