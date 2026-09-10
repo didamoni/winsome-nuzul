@@ -82,4 +82,19 @@
     <string name="bookings_empty_past_title">No Past Stays</string>
     <string name="bookings_empty_past_subtitle">Your completed journeys and stays will appear here after checkout.</string>
 
+    <!-- Hotel Details Screen -->
+    <string name="hotel_details_back_desc">Navigate back</string>
+    <string name="hotel_details_favorite_desc">Toggle favorite</string>
+    <string name="hotel_details_about_section">About This Sanctuary</string>
+    <string name="hotel_details_amenities_section">Amenities &amp; Curated Services</string>
+    <string name="hotel_details_location_section">Location</string>
+    <string name="hotel_details_price_from">FROM</string>
+    <string name="hotel_details_price_per_night">/ night</string>
+    <string name="hotel_details_price_vat_notice">Includes 15% VAT &amp; resort fees</string>
+    <string name="hotel_details_book_action">Reserve</string>
+    <string name="hotel_details_image_counter_format">%1$d / %2$d</string>
+    <string name="hotel_details_error_title">Sanctuary Not Found</string>
+    <string name="hotel_details_error_subtitle">We couldn’t retrieve the details for this hotel. Please try again.</string>
+    <string name="hotel_details_error_back">Go Back</string>
+
 </resources>
