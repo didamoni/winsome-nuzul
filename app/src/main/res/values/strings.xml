@@ -52,4 +52,14 @@
     <string name="explore_error_retry_action">Retry</string>
     <string name="explore_offline_notice">Offline mode • Showing cached sanctuaries</string>
 
+    <!-- Favorites Screen -->
+    <string name="favorites_brand_eyebrow">SAVED RETREATS</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="favorites_subtitle">Your curated collection of sanctuaries and stays</string>
+    <string name="favorites_count_format">%1$d saved</string>
+
+    <!-- Empty State -->
+    <string name="favorites_empty_title">No Saved Sanctuaries Yet</string>
+    <string name="favorites_empty_subtitle">When you find a hotel you love, tap the heart icon to save it here for effortless booking.</string>
+
 </resources>

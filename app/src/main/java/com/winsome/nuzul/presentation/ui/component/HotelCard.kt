@@ -64,7 +64,7 @@ fun HotelCard(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(210.dp)
+                    .height(160.dp)
             ) {
                 AsyncImage(
                     model = hotel.images.firstOrNull(),
