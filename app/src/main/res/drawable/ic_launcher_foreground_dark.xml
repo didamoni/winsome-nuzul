@@ -4,9 +4,9 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- 1. Champagne Gold Archway Portal -->
+    <!-- 1. Radiant Gold Archway Portal -->
     <path
-        android:fillColor="#C8A76B"
+        android:fillColor="#DDBE86"
         android:pathData="
             M 31,52
             A 23,23 0 0,1 77,52
@@ -22,16 +22,16 @@
             Q 31,79 31,75
             Z" />
 
-    <!-- 2. Obsidian Black "N" Monogram (Left & Right Stems) -->
+    <!-- 2. Warm Ivory "N" Monogram (Left & Right Stems) -->
     <path
-        android:fillColor="#111312"
+        android:fillColor="#F6F3EC"
         android:pathData="
             M 37.0,50.5 h 4.2 v 19.0 h -4.2 z
             M 66.8,50.5 h 4.2 v 19.0 h -4.2 z" />
 
-    <!-- 3. Upper Diagonal Stroke of "N" -->
+    <!-- 3. Upper Diagonal Stroke (Warm Ivory) -->
     <path
-        android:fillColor="#111312"
+        android:fillColor="#F6F3EC"
         android:pathData="
             M 41.2,50.5
             h 3.2
@@ -40,9 +40,9 @@
             L 41.2,53.5
             Z" />
 
-    <!-- 4. Lower Diagonal Stroke of "N" (Parallel Slotted Diagonal) -->
+    <!-- 4. Lower Diagonal Stroke (Warm Ivory) -->
     <path
-        android:fillColor="#111312"
+        android:fillColor="#F6F3EC"
         android:pathData="
             M 66.8,69.5
             h -3.2

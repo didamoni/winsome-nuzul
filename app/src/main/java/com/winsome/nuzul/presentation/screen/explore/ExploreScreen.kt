@@ -1,7 +1,9 @@
 package com.winsome.nuzul.presentation.screen.explore
 
 import android.content.res.Configuration
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,6 +15,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -36,6 +39,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -115,21 +119,43 @@ private fun ExploreScreenContent(
                         .fillMaxWidth()
                         .padding(start = 20.dp, end = 20.dp, top = 20.dp, bottom = 12.dp)
                 ) {
-                    Text(
-                        text = stringResource(R.string.explore_brand_eyebrow),
-                        style = typography.labelSmall.copy(
-                            letterSpacing = 2.sp,
-                            fontWeight = FontWeight.Bold
-                        ),
-                        color = colorScheme.tertiary
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Image(
+                            painter = painterResource(
+                                if (isSystemInDarkTheme()) R.drawable.ic_launcher_foreground_dark
+                                else R.drawable.ic_launcher_foreground
+                            ),
+                            contentDescription = stringResource(R.string.explore_brand_eyebrow),
+                            modifier = Modifier.size(52.dp)
+                        )
+
+                        Spacer(modifier = Modifier.width(14.dp))
+
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = stringResource(R.string.explore_brand_eyebrow),
+                                style = typography.labelSmall.copy(
+                                    letterSpacing = 2.sp,
+                                    fontWeight = FontWeight.Bold
+                                ),
+                                color = colorScheme.tertiary
+                            )
+                            Spacer(modifier = Modifier.height(2.dp))
+                            Text(
+                                text = stringResource(R.string.explore_title),
+                                style = typography.displayMedium.copy(
+                                    fontSize = 28.sp,
+                                    lineHeight = 34.sp
+                                ),
+                                color = colorScheme.onBackground
+                            )
+                        }
+                    }
                     Spacer(modifier = Modifier.height(6.dp))
-                    Text(
-                        text = stringResource(R.string.explore_title),
-                        style = typography.displayMedium,
-                        color = colorScheme.onBackground
-                    )
-                    Spacer(modifier = Modifier.height(4.dp))
+
                     Text(
                         text = stringResource(R.string.explore_subtitle),
                         style = typography.bodyMedium,
