@@ -29,7 +29,7 @@ fun NuzulScaffold(
     bottomBar = {
         val currentRoute = backStack.lastOrNull()
         if (currentRoute is Route.Main) {
-            NuzulBottomBar(currentRoute) { route ->
+            NuzulNavigationBottomBar(currentRoute) { route ->
                 backStack.clear()
                 backStack.add(Route.Main.Explore)
                 if (route != Route.Main.Explore) backStack.add(route)
