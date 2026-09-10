@@ -1,6 +1,5 @@
 package com.winsome.nuzul.presentation.ui.component
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -42,9 +41,8 @@ fun FeaturedHotelCard(
     modifier: Modifier = Modifier
 ) {
     Card(
-        modifier = modifier
-            .width(280.dp)
-            .clickable(onClick = onClick),
+        onClick = onClick,
+        modifier = modifier.width(280.dp),
         shape = MaterialTheme.shapes.large,
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)

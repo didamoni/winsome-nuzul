@@ -14,9 +14,9 @@
     "Istanbul"
   ],
   "featured": [
-    "hotel_020",
-    "hotel_040",
-    "hotel_060",
+    "hotel_005",
+    "hotel_009",
+    "hotel_011",
     "hotel_080",
     "hotel_100"
   ],
@@ -25,7 +25,7 @@
       "id": "hotel_001",
       "name": "Marriott Mena House",
       "city": "Giza",
-      "rating": 4.8,
+      "rating": 4.9,
       "pricePerNight": { "amount": 380.00, "currency": "USD" },
       "images": [
         "https://www.hotelscombined.com/himg/ed/d5/43/leonardo-6106-717578-491178.jpg",
