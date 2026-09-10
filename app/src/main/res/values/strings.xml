@@ -57,9 +57,29 @@
     <string name="favorites_title">Favorites</string>
     <string name="favorites_subtitle">Your curated collection of sanctuaries and stays</string>
     <string name="favorites_count_format">%1$d saved</string>
-
-    <!-- Empty State -->
     <string name="favorites_empty_title">No Saved Sanctuaries Yet</string>
     <string name="favorites_empty_subtitle">When you find a hotel you love, tap the heart icon to save it here for effortless booking.</string>
+
+    <!-- Bookings Screen -->
+    <string name="bookings_brand_eyebrow">YOUR RESERVATIONS</string>
+    <string name="bookings_title">Bookings</string>
+    <string name="bookings_subtitle">Review and manage your upcoming and completed stays</string>
+    <string name="bookings_tab_upcoming">Upcoming (%1$d)</string>
+    <string name="bookings_tab_past">Past (%1$d)</string>
+    <string name="bookings_status_confirmed">Confirmed</string>
+    <string name="bookings_status_completed">Completed</string>
+    <string name="bookings_ref_label">Ref: %1$s</string>
+    <string name="bookings_stay_nights_single">%1$d night</string>
+    <string name="bookings_stay_nights_plural">%1$d nights</string>
+    <string name="bookings_stay_rooms_single">%1$d room</string>
+    <string name="bookings_stay_rooms_plural">%1$d rooms</string>
+    <string name="bookings_stay_details_format">%1$s • %2$s</string>
+    <string name="bookings_date_range_format">%1$s — %2$s</string>
+    <string name="bookings_view_details">View Details</string>
+    <string name="bookings_total_label">TOTAL</string>
+    <string name="bookings_empty_upcoming_title">No Upcoming Stays</string>
+    <string name="bookings_empty_upcoming_subtitle">You don’t have any active or upcoming reservations. Discover new sanctuaries in Explore.</string>
+    <string name="bookings_empty_past_title">No Past Stays</string>
+    <string name="bookings_empty_past_subtitle">Your completed journeys and stays will appear here after checkout.</string>
 
 </resources>
