@@ -129,4 +129,25 @@
     <string name="booking_error_checkin_past">Check-in date cannot be in the past.</string>
     <string name="booking_error_invalid_rooms">Number of rooms must be at least 1.</string>
 
+    <!-- Booking Details Screen -->
+    <string name="booking_details_brand_eyebrow">RESERVATION CONFIRMED</string>
+    <string name="booking_details_title">Booking Details</string>
+    <string name="booking_details_subtitle">Your sanctuary reservation summary and official receipt</string>
+    <string name="booking_details_reference_label">Booking Reference</string>
+    <string name="booking_details_status_label">Status</string>
+    <string name="booking_details_status_confirmed">Confirmed</string>
+    <string name="booking_details_stay_header">Stay Information</string>
+    <string name="booking_details_check_in">Check-in</string>
+    <string name="booking_details_check_out">Check-out</string>
+    <string name="booking_details_duration_header">Duration &amp; Rooms</string>
+    <string name="booking_details_nights_rooms">%1$d nights • %2$d rooms</string>
+    <string name="booking_details_payment_header">Payment Summary</string>
+    <string name="booking_details_base_price">Base Fare (%1$d nights × %2$d rooms)</string>
+    <string name="booking_details_vat">15% Standard VAT</string>
+    <string name="booking_details_total">Total Paid</string>
+    <string name="booking_details_vat_notice">Fully paid including 15% VAT and municipal fees</string>
+    <string name="booking_details_back_action">Back to Bookings</string>
+    <string name="booking_details_error_title">Reservation Not Found</string>
+    <string name="booking_details_error_subtitle">We couldn’t retrieve the booking details for this reference code.</string>
+
 </resources>

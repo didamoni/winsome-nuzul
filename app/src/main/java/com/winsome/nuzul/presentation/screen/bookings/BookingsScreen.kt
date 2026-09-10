@@ -36,14 +36,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.winsome.nuzul.R
-import com.winsome.nuzul.domain.model.Booking
-import com.winsome.nuzul.domain.model.Money
 import com.winsome.nuzul.presentation.ui.component.BookingCard
 import com.winsome.nuzul.presentation.ui.component.EmptyStateView
 import com.winsome.nuzul.presentation.ui.theme.NuzulTheme
-import java.math.BigDecimal
-import java.time.LocalDate
-import java.time.LocalDateTime
+import com.winsome.nuzul.util.Samples
 
 private const val TAB_UPCOMING = 0
 private const val TAB_PAST = 1
@@ -212,30 +208,9 @@ private fun BookingsScreenContent(
     }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Screen Previews (Light & Dark Themes)
-// ─────────────────────────────────────────────────────────────────────────────
-
-private val sampleBooking = Booking(
-    reference = "NZL-7A8B2X",
-    hotelId = "hrg-oberoi-02",
-    hotelName = "The Oberoi Beach Resort",
-    hotelCity = "Hurghada",
-    hotelImages = listOf("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"),
-    pricePerNight = Money(BigDecimal("1150.00"), "SAR"),
-    checkIn = LocalDate.now().plusDays(3),
-    checkOut = LocalDate.now().plusDays(6),
-    rooms = 1,
-    nights = 3,
-    basePrice = Money(BigDecimal("3450.00"), "SAR"),
-    vat = Money(BigDecimal("517.50"), "SAR"),
-    totalPrice = Money(BigDecimal("3967.50"), "SAR"),
-    createdAt = LocalDateTime.now()
-)
-
 private val previewBookingsState = BookingsUiState(
     isLoading = false,
-    upcomingBookings = listOf(sampleBooking),
+    upcomingBookings = Samples.bookings,
     pastBookings = emptyList()
 )
 
