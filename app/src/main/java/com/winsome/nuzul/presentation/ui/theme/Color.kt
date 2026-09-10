@@ -2,10 +2,18 @@ package com.winsome.nuzul.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Brand Core Palette
+val DeepEvergreen = Color(0xFF1F2A28) // Primary
+val Forest = Color(0xFF30403C)        // Secondary Dark
+val Champagne = Color(0xFFC5A46D)     // Restrained Luxury Accent
+val SeaGlass = Color(0xFF78948C)      // Coastal Accent
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// Surfaces & Backgrounds
+val WarmIvory = Color(0xFFF7F4EE)     // Primary Light Background
+val SoftSand = Color(0xFFEAE3D7)      // Secondary Surface / Container
+val PureWhite = Color(0xFFFFFDFC)     // Card & Elevated Surfaces
+
+// Typography & Content
+val Charcoal = Color(0xFF202321)       // Primary Content / Text
+val MutedGray = Color(0xFF6E726E)      // Secondary / Caption Text
+val DividerColor = Color(0xFFE2DDD4)   // Subtle Hairline Borders
