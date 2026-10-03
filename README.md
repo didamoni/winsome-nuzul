@@ -11,15 +11,43 @@
 
 ---
 
-### Screenshots
+### 📱 Visual Gallery
 
-| Explore                                                       | Favorites                                                             | Bookings                                                       | Booking Details                                                       | Booking Calendar                                                       |
-|:-------------------------------------------------------------:|:---------------------------------------------------------------------:|:--------------------------------------------------------------:|:---------------------------------------------------------------------:|:----------------------------------------------------------------------:|
-| <img src="docs/screenshots/explore-light.jpeg" width="180" /> | <img src="docs/screenshots/favorites-empty-light.jpeg" width="180" /> | <img src="docs/screenshots/bookings-light.jpeg" width="180" /> | <img src="docs/screenshots/booking-details-light.jpeg" width="180" /> | <img src="docs/screenshots/booking-calendar-light.jpeg" width="180" /> |
+<p align="center">
+  <b>Light Theme Journey</b><br>
+  <i>Explore &nbsp;•&nbsp; Empty Favorites &nbsp;•&nbsp; Bookings &nbsp;•&nbsp; Receipt Details &nbsp;•&nbsp; Date Picker</i>
+</p>
 
-| Filter Hotels                                                      | Search Empty                                                      | Favorites                                                      | Hotel Details                                                      | Booking                                                      |
-|:------------------------------------------------------------------:|:-----------------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------------------:|:------------------------------------------------------------:|
-| <img src="docs/screenshots/filter-hotels-dark.jpeg" width="180" /> | <img src="docs/screenshots/search-empty-dark.jpeg" width="180" /> | <img src="docs/screenshots/favorites-dark.jpeg" width="180" /> | <img src="docs/screenshots/hotel-details-dark.jpeg" width="180" /> | <img src="docs/screenshots/booking-dark.jpeg" width="180" /> |
+<p align="center">
+  <img src="docs/screenshots/explore-light.jpeg" width="18%" alt="Explore Light" />
+  &nbsp;
+  <img src="docs/screenshots/favorites-empty-light.jpeg" width="18%" alt="Favorites Empty Light" />
+  &nbsp;
+  <img src="docs/screenshots/bookings-light.jpeg" width="18%" alt="Bookings Light" />
+  &nbsp;
+  <img src="docs/screenshots/booking-details-light.jpeg" width="18%" alt="Booking Details Light" />
+  &nbsp;
+  <img src="docs/screenshots/booking-calendar-light.jpeg" width="18%" alt="Booking Calendar Light" />
+</p>
+
+<br>
+
+<p align="center">
+  <b>Dark Theme &amp; Modals ("Dark Oil &amp; Radiant Gold")</b><br>
+  <i>Filter Sheet &nbsp;•&nbsp; Empty Search &nbsp;•&nbsp; Saved Favorites &nbsp;•&nbsp; Hotel Details &nbsp;•&nbsp; Reservation Form</i>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/filter-hotels-dark.jpeg" width="18%" alt="Filter Hotels Dark" />
+  &nbsp;
+  <img src="docs/screenshots/search-empty-dark.jpeg" width="18%" alt="Search Empty Dark" />
+  &nbsp;
+  <img src="docs/screenshots/favorites-dark.jpeg" width="18%" alt="Favorites Dark" />
+  &nbsp;
+  <img src="docs/screenshots/hotel-details-dark.jpeg" width="18%" alt="Hotel Details Dark" />
+  &nbsp;
+  <img src="docs/screenshots/booking-dark.jpeg" width="18%" alt="Booking Dark" />
+</p>
 
 ---
 
@@ -57,19 +85,19 @@
 ```
 
 1. **Targeted State Management**:
-  * **MVI (`Explore`, `Booking`)**: Unidirectional intent pipelines prevent race conditions on complex screens with search debounce, sliders, date pickers, and room steppers.
-  * **Reactive MVVM (`Favorites`, `Bookings`, `BookingDetails`)**: Lightweight stream observers for read-only lists and entity details.
+* **MVI (`Explore`, `Booking`)**: Unidirectional intent pipelines prevent race conditions on complex screens with search debounce, sliders, date pickers, and room steppers.
+* **Reactive MVVM (`Favorites`, `Bookings`, `BookingDetails`)**: Lightweight stream observers for read-only lists and entity details.
 2. **Navigation 3 with a Single Root Scaffold**:
-  * One global `NuzulScaffold` hosts `NuzulNavDisplay`, eliminating nested scaffold bugs and double-padding issues on 3-button navigation devices.
-  * Flat backstack ensures `Explore` is always root. Confirming a booking atomically resets the backstack to `[Explore, Bookings, BookingDetails]`, meaning pressing back on a receipt pops directly to the `Bookings` list.
+* One global `NuzulScaffold` hosts `NuzulNavDisplay`, eliminating nested scaffold bugs and double-padding issues on 3-button navigation devices.
+* Flat backstack ensures `Explore` is always root. Confirming a booking atomically resets the backstack to `[Explore, Bookings, BookingDetails]`, meaning pressing back on a receipt pops directly to the `Bookings` list.
 3. **Data Layer Streamlining**:
-  * **Direct DAO Injection**: Room DAOs are injected directly into Repositories, removing redundant 1:1 pass-through wrapper layers.
-  * **Featured Junction Table**: Featured hotels are stored in a dedicated `featured_hotels (hotelId PK, displayOrder INT)` table and linked via SQL `INNER JOIN`, preventing pagination leaks where featured items might be missing from page 1.
+* **Direct DAO Injection**: Room DAOs are injected directly into Repositories, removing redundant 1:1 pass-through wrapper layers.
+* **Featured Junction Table**: Featured hotels are stored in a dedicated `featured_hotels (hotelId PK, displayOrder INT)` table and linked via SQL `INNER JOIN`, preventing pagination leaks where featured items might be missing from page 1.
 4. **Live Favorites Synchronization**:
-  * The UI updates optimistically (0ms response).
-  * `ExploreViewModel` observes `getFavoriteHotelsUseCase()`, automatically synchronizing favorite states when toggled in Details or removed in Favorites.
+* The UI updates optimistically (0ms response).
+* `ExploreViewModel` observes `getFavoriteHotelsUseCase()`, automatically synchronizing favorite states when toggled in Details or removed in Favorites.
 5. **Deterministic Financial Math**:
-  * Calculations for base price, 15% VAT, and totals strictly use `BigDecimal` with `RoundingMode.HALF_UP` to prevent floating-point rounding errors.
+* Calculations for base price, 15% VAT, and totals strictly use `BigDecimal` with `RoundingMode.HALF_UP` to prevent floating-point rounding errors.
 
 ---
 
@@ -183,7 +211,7 @@ com.winsome.nuzul/
 
 ## ⚙️ Getting Started
 
-1. Clone the repository or open the project folder in **Android Studio** (Koala / Ladybug or newer recommended).
+1. Clone the repository or open the project folder in **Android Studio**.
 2. Ensure you have the **Android SDK (Compile SDK 37, Min SDK 26)** configured.
 3. Sync the project with Gradle files (`File > Sync Project with Gradle Files`).
 4. Run the app on an emulator or a physical Android device (`app` module / `debug` build variant).
